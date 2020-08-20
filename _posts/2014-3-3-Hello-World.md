@@ -1,13 +1,8 @@
 ---
 layout: post
-title: First Blog Post
+title: Docker Tutorial
 published: true
 ---
----
-layout: post
-title: Docker Tutorial
----
-
 Docker is a platform for developers and sysadmins to build, run and share applicantions with containers.
 
 [Get Started with Docker](https://docker.com/get-started).
