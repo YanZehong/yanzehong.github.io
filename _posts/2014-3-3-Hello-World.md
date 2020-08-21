@@ -27,14 +27,8 @@ A container is a runnable instance of an image. You can create, start, stop, mov
 #### Example
 The following command runs an _ubuntu_ container, attaches interactively to your local command-line session, and runs _/bin/bash_.
 
-```python
+{% highlight ruby linenos %}
 $ docker run -i -t ubuntu /bin/bash
-```
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
 {% endhighlight %}
 
 ### REGISTRIES
