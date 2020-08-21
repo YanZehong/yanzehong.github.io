@@ -36,10 +36,10 @@ A Docker registry stores Docker images. Docker Hub is a public registry that any
 
 #### Command
 {% highlight ruby linenos %}
-// pull required images from your configured registry
+ /* pull required images from your configured registry
     docker pull
     docker run
-// push image to your configured registry
+ /* push image to your configured registry
     docker push
 {% endhighlight %}
 
