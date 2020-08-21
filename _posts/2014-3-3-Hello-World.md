@@ -11,14 +11,23 @@ This page contains step-by-step instructions on how to get started with Docker.
 
 ## Docker overview
 Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allow you to run many containers simultaneously on a give host.
+
 build: images
-pull: registry -> host 
-`ship images from registry to host by docker daemon`
+pull: ship images from registry to host 
 run: containers
+
 ### IMAGES
 An image is a read-only template with instructions for creating a Docker container. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.
+
 ### CONTAINERS
 A container is a runnable instance of an image. You can create, start, stop, move or delete a container using Docker API or CLI.
+
+#### Example
+The following command runs an ```ubuntu``` container, attaches interactively to your local command-line session, and runs ```/bin/bash```.
+
+```javascript
+$ docker run -i -t ubuntu /bin/bash
+```
 
 ### REGISTRIES
 
