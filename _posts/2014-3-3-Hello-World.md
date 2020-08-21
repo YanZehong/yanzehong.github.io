@@ -34,9 +34,9 @@ $ docker run -i -t ubuntu /bin/bash
 ### REGISTRIES
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub. You can also run your own private registry.
 
-When you use the docker pull or docker run commands, the required images are pulled from your configured registry.
+When you use the {% highlight ruby %} docker pull {% endhighlight %} or {% highlight ruby %} docker run {% endhighlight %} commands, the required images are pulled from your configured registry.
 
-When you use the docker push command, your image is pushed to your configured registry.
+When you use the {% highlight ruby %} docker push {% endhighlight %} command, your image is pushed to your configured registry.
 
 #### Header 4
 
