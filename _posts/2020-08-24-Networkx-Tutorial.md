@@ -23,11 +23,25 @@ Create an empty graph with no nodes and no edges.
 
 <body>
     {% highlight ruby %}
-    def show
   	import networkx as nx
   	G = nx.Graph()
     {% endhighlight %}
 </body>
+
+## Nodes
+Several ways to add nodes by NetworkX
+
+{% highlight ruby %}
+# add one node at a time
+G.add_node(1)
+# add nodes from any iterable container
+G.add_nodes_from([2, 3])
+# add nodes along with node attributes
+G.add_nodes_from([
+	(4, {"color": "red"}),
+    (5, {"color": "green"}),
+])
+{% endhighlight %}
 
 ### Header 3
 
