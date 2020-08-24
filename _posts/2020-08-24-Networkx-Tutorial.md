@@ -31,17 +31,57 @@ Create an empty graph with no nodes and no edges.
 ## Nodes
 Several ways to add nodes by NetworkX
 
-{% highlight ruby %}
-# add one node at a time
-G.add_node(1)
-# add nodes from any iterable container
-G.add_nodes_from([2, 3])
-# add nodes along with node attributes
-G.add_nodes_from([
-	(4, {"color": "red"}),
-    (5, {"color": "green"}),
-])
-{% endhighlight %}
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    # add one node at a time
+    G.add_node(1)
+    # add nodes from any iterable container
+    G.add_nodes_from([2, 3])
+    # add nodes along with node attributes
+    G.add_nodes_from([
+        (4, {"color": "red"}),
+        (5, {"color": "green"}),
+    ])
+  	# add nodes from another graph
+	H = nx.path_graph(10)
+	G.add_nodes_from(H)
+    {% endhighlight %}
+</body>
+
+## Edges
+
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    # add one edge at a time
+    G.add_edge(1, 2)
+	e = (2, 3)
+	G.add_edge(*e) # unpack edge typle*
+    # add a list of edges
+    G.add_edges_from([(1, 2), (1, 3)])
+    # add edges from edge-tuples
+    G.add_edges_from(H.edges)
+    {% endhighlight %}
+</body>
 
 ### Header 3
 
