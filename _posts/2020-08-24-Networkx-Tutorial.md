@@ -1,16 +1,12 @@
 ---
 published: true
 ---
----
-layout: post
-title: Markdown Style Guide
----
+NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
-This is a demo of all styled elements in Jekyll Now.
+-Website: [NetworkX 2.5, including documentation](https://networkx.github.io).
+-Source: [GitHub](http://github.com/networkx/networkx)
 
-[View the markdown used to create this post](https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md).
-
-This is a paragraph, it's surrounded by whitespace. Next up are some headers, they're heavily influenced by GitHub's markdown style.
+This guide can help you start working with NetworkX.
 
 ## Header 2 (H1 is reserved for post titles)##
 
@@ -18,7 +14,7 @@ This is a paragraph, it's surrounded by whitespace. Next up are some headers, th
 
 #### Header 4
 
-A link to [Jekyll Now](http://github.com/barryclark/jekyll-now/). A big ass literal link <http://github.com/barryclark/jekyll-now/>
+A link to [Jekyll Now](http://github.com/networkx/networkx). A big ass literal link <http://github.com/barryclark/jekyll-now/>
 
 An image, located within /images
 
