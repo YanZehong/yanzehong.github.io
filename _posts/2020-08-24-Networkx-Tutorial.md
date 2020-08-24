@@ -8,7 +8,26 @@ NetworkX is a Python package for the creation, manipulation, and study of the st
 
 This guide can help you start working with NetworkX.
 
-## Header 2 (H1 is reserved for post titles)##
+## Creating a graph
+Create an empty graph with no nodes and no edges.
+
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    def show
+  	import networkx as nx
+  	G = nx.Graph()
+    {% endhighlight %}
+</body>
 
 ### Header 3
 
