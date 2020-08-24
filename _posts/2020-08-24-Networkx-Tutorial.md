@@ -56,6 +56,9 @@ Several ways to add nodes by NetworkX
     # add nodes from another graph
     H = nx.path_graph(10)
     G.add_nodes_from(H)
+    # difference
+    G.add_node("spam")        # adds node "spam"
+    G.add_nodes_from("spam")  # adds 4 nodes: 's', 'p', 'a', 'm'
     {% endhighlight %}
 </body>
 
@@ -83,6 +86,104 @@ Several ways to add nodes by NetworkX
     G.add_edges_from(H.edges)
     {% endhighlight %}
 </body>
+
+## Examining elements of a graph
+There are four basic graph properties facilitate reporting, which are set-like views of the nodes, edges, neighbors (adjacencies), and degrees of nodes in a graph.
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    list(G.nodes)
+    list(G.edges)
+    list(G.adj[1]) # adjacent nodes of 1
+    G.degree[1] # the number of edges incident to 1
+    G.number_of_nodes()
+    G.number_of_edges()
+    {% endhighlight %}
+</body>
+
+Another way to access to edges and neighbors.
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    >>> G = nx.Graph([(1, 2, {"color": "yellow"})])
+    >>> G[1]
+    AtlasView({2: {'color': 'yellow'}})
+    >>> G[1][2]
+    {'color': 'yellow'}
+    >>> G.edges[1, 2]
+    {'color': 'yellow'}
+    # get/set the attributes of an edge using subscript notation
+    >>> G.[1][2]['color'] = 'blue'
+    {'color': 'blue'}
+    >>> G.edges[1, 2]['color'] = "red"
+    >>> G.edges[1, 2]
+    {'color': 'red'}
+    {% endhighlight %}
+</body>
+
+Fast examination of all (node, adjacency) pairs
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    FG = nx.Graph()
+    FG.add_weighted_edges_from([(1, 2, 0.125), (1, 3, 0.75), (2, 4, 1.2), (3, 4, 0.375)])
+    for n, nbrs in FG.adj.items():
+      for nbr, eattr in nbrs.items():
+        wt = eattr['weight']
+        if wt < 0.5: print(f"({n}, {nbr}, {wt:.3})")
+    # Convenient access to all edges
+    for (u, v, wt) in FG.edges.data('weight'):
+      if wt < 0.5:
+        print(f"({u}, {v}, {wt:.3})")
+    {% endhighlight %}
+</body>
+
+## Removing elements from a graph
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    G.remove_node(2)
+    G.remove_nodes_from("spam")
+    G.remove_edge(1, 3)
+    {% endhighlight %}
+</body>
+
 
 ### Header 3
 
