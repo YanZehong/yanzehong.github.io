@@ -53,9 +53,9 @@ Several ways to add nodes by NetworkX
         (4, {"color": "red"}),
         (5, {"color": "green"}),
     ])
-  	# add nodes from another graph
-	H = nx.path_graph(10)
-	G.add_nodes_from(H)
+    # add nodes from another graph
+    H = nx.path_graph(10)
+    G.add_nodes_from(H)
     {% endhighlight %}
 </body>
 
@@ -75,8 +75,8 @@ Several ways to add nodes by NetworkX
     {% highlight ruby %}
     # add one edge at a time
     G.add_edge(1, 2)
-	e = (2, 3)
-	G.add_edge(*e) # unpack edge typle*
+    e = (2, 3)
+    G.add_edge(*e) # unpack edge typle*
     # add a list of edges
     G.add_edges_from([(1, 2), (1, 3)])
     # add edges from edge-tuples
