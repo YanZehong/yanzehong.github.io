@@ -155,13 +155,13 @@ Fast examination of all (node, adjacency) pairs
     FG = nx.Graph()
     FG.add_weighted_edges_from([(1, 2, 0.125), (1, 3, 0.75), (2, 4, 1.2), (3, 4, 0.375)])
     for n, nbrs in FG.adj.items():
-      for nbr, eattr in nbrs.items():
-        wt = eattr['weight']
-        if wt < 0.5: print(f"({n}, {nbr}, {wt:.3})")
+        for nbr, eattr in nbrs.items():
+          wt = eattr['weight']
+          if wt < 0.5: print(f"({n}, {nbr}, {wt:.3})")
     # Convenient access to all edges
     for (u, v, wt) in FG.edges.data('weight'):
-      if wt < 0.5:
-        print(f"({u}, {v}, {wt:.3})")
+        if wt < 0.5:
+          print(f"({u}, {v}, {wt:.3})")
     {% endhighlight %}
 </body>
 
@@ -184,6 +184,108 @@ Fast examination of all (node, adjacency) pairs
     {% endhighlight %}
 </body>
 
+## Adding attributes to graphs, nodes, and edges
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    # graph
+    >>> G = nx.Graph(day="Friday")
+    >>> G.graph['day'] = "Monday"
+    >>> G.graph
+    {'day': 'Monday'}
+  
+    # node
+    >>> G.add_node(1, time='5pm')
+    >>> G.add_nodes_from([3], time='2pm')
+    >>> G.nodes[1]
+    {'time': '5pm'}
+    >>> G.nodes[1]['room'] = 714
+    >>> G.nodes.data()
+    NodeDataView({1: {'time': '5pm', 'room': 714}, 3: {'time': '2pm'}})
+  
+    # edge
+    G.add_edge(1, 2, weight=4.7 )
+    G.add_edges_from([(3, 4), (4, 5)], color='red')
+    G.add_edges_from([(1, 2, {'color': 'blue'}), (2, 3, {'weight': 8})])
+    G[4][5]['weight'] = 4.7
+    G.edges[3, 4]['weight'] = 4.2
+    {% endhighlight %}
+</body>
+
+## Directed graphs
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    >>> DG = nx.DiGraph() 
+    >>> DG.add_weighted_edges_from([(1, 2, 0.5), (3, 1, 0.75)])
+    >>> DG.out_degree(1, weight='weight')
+    0.5
+    >>> DG.degree(1, weight='weight')
+    1.25
+    >>> list(DG.neighbors(1))
+    [2]
+    {% endhighlight %}
+</body>
+
+### Convert directed graph to an undirected one
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    DG = nx.DiGraph() 
+    DG.to_undirected()
+    # Another way
+    H = nx.Graph(DG)
+    {% endhighlight %}
+</body>
+
+## Multigraphs
+Following classes for graphs allow multiple edges between any pair of nodes. This can be powerful for some applications, but many algorithms are not well defined on such graphs.
+
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    >>> MG = nx.MultiGraph() 
+    >>> MG.add_weighted_edges_from([(1, 2, 0.5), (1, 2, 0.75), (2, 3, 0.5)])
+    >>> dict(MG.degree(weight='weight'))
+    {1: 1.25, 2: 1.75, 3: 0.5}
+    {% endhighlight %}
+</body>
 
 ### Header 3
 
