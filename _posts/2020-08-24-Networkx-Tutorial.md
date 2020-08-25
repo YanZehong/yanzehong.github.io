@@ -24,8 +24,8 @@ Create an empty graph with no nodes and no edges.
 
 <body>
     {% highlight ruby %}
-  	import networkx as nx
-  	G = nx.Graph()
+    import networkx as nx
+    G = nx.Graph()
     {% endhighlight %}
 </body>
 
