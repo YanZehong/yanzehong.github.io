@@ -287,46 +287,121 @@ Following classes for graphs allow multiple edges between any pair of nodes. Thi
     {% endhighlight %}
 </body>
 
-### Header 3
+## Analyzing graphs
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
 
-#### Header 4
+<body>
+    {% highlight ruby %}
+    >>> G = nx.Graph()
+    >>> G.add_edges_from([(1, 2), (1, 3)])
+    >>> G.add_node("spam")
+    >>> list(nx.connected_components(G))
+    [{1, 2, 3}, {'spam'}]
+    >>> sorted(d for n, d in G.degree())
+    [0, 1, 1, 2]
+    >>> nx.clustering(G)
+    {1: 0, 2: 0, 3: 0, 'spam': 0}
+    {% endhighlight %}
+</body>
 
-A link to [Jekyll Now](http://github.com/networkx/networkx). A big ass literal link <http://github.com/barryclark/jekyll-now/>
+Some functions with large output iterate over (node, value) 2-tuples.
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
 
-An image, located within /images
+<body>
+    {% highlight ruby %}
+    >>> sp = dict(nx.all_pairs_shortest_path(G))
+    >>> sp[3]
+    {3: [3], 1: [3, 1], 2: [3, 1, 2]}
+    {% endhighlight %}
+</body>
 
-![an image alt text]({{ site.baseurl }}/images/jekyll-logo.png "an image title")
+## Drawing graphs
+NetworkX is not primarily a graph drawing package but basic drawing with Matplotlib as well as an interface to use the open source Graphviz software package are included.
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
 
-* A bulletted list
-- alternative syntax 1
-+ alternative syntax 2
-  - an indented list item
+<body>
+    {% highlight ruby %}
+    import matplotlib.pyplot as plt
+    G = nx.petersen_graph()
+    plt.subplot(121)
+    nx.draw(G, with_labels=True, font_weight='bold')
+    plt.subplot(122)
+    nx.draw_shell(G, nlist=[range(5, 10), range(5)], with_labels=True, font_weight='bold')
+    plt.show()
+    {% endhighlight %}
+</body>
 
-1. An
-2. ordered
-3. list
+### Output
+![an image alt text]({{ site.baseurl }}/images/path1.png "an image title")
 
-Inline markup styles:
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
 
-- _italics_
-- **bold**
-- `code()`
+<body>
+    {% highlight ruby %}
+    options = {
+        'node_color': 'black',
+        'node_size': 100,
+        'width': 3,
+    }
+    plt.subplot(221)
+    nx.draw_random(G, **options)
+    plt.subplot(222)
+    nx.draw_circular(G, **options)
+    plt.subplot(223)
+    nx.draw_spectral(G, **options)
+    plt.subplot(224)
+    nx.draw_shell(G, nlist=[range(5,10), range(5)], **options)
+    plt.savefig("path2.png")
+    {% endhighlight %}
+</body>
 
-> Blockquote
->> Nested Blockquote
+### Output
+![an image alt text]({{ site.baseurl }}/images/path2.png "an image title")
 
-Syntax highlighting can be used with triple backticks, like so:
+writes to the file in the local directory.
+<body>
+    {% highlight ruby %}
+    from networkx.drawing.nx_pydot import write_dot
+    pos = nx.nx_agraph.graphviz_layout(G) # nx_pydot.graphviz_layout(G)
+    nx.draw(G, pos=pos)
+    write_dot(G, 'file.dot')
+    {% endhighlight %}
+</body>
 
-```javascript
-/* Some pointless Javascript */
-var rawr = ["r", "a", "w", "r"];
-```
-
-Use two trailing spaces  
-on the right  
-to create linebreak tags  
-
-Finally, horizontal lines
+See [Drawing](http://github.com/networkx/networkx) for additional details.
 
 ----
-****
+#### Reference
+<https://networkx.github.io/documentation/stable/tutorial.html/>
