@@ -390,7 +390,7 @@ NetworkX is not primarily a graph drawing package but basic drawing with Matplot
 ### Output
 ![an image alt text]({{ site.baseurl }}/images/path2.png "an image title")
 
-writes to the file in the local directory.
+Write to the file in the local directory.
 <body>
     {% highlight ruby %}
     from networkx.drawing.nx_pydot import write_dot
