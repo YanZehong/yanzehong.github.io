@@ -4,8 +4,9 @@ published: true
 ## Forward propagation & Backward propagation for layer l
 
 ### Forward
-Input $$a^{[l-1]}$$
-Output $$a^{[l]},cache($$z^{[l]}$$)
+Input: $$a^{[l-1]}$$
+
+Output: $$a^{[l]}$$, cache$$(z^{[l]})$$
 
 $$z^{[l]} = \omega^{[l]} a^{[l-1]} + b^{[l]}$$
 
