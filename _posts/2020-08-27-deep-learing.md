@@ -24,16 +24,16 @@ Output: $$da^{[l-1]}$$, $$dW^{[l]})$$, $$db^{[l]})$$
 
 $$dz^{[l]} = da{[l]} * g^{[l]'}(z^{[l]})$$
 
-$$d\omega^{[l]} = dz^{[l]}a^{[l-1].T}$$
+$$d\omega^{[l]} = dz^{[l]}a^{[l-1]^T}$$
 
 $$db^{[l]} = dz^{[l]}$$
 
-$$da^{[l-1]} = \omega^{[l].T}dz^{[l]}$$
+$$da^{[l-1]} = \omega^{[l]^T}dz^{[l]}$$
 
 #### Vectorized version
 $$dz^{[l]} = dA{[l]} * g^{[l]'}(z^{[l]})$$
 
-$$d\omega^{[l]} = \frac{1}{m}dz^{[l]}A^{[l-1].T}$$
+$$d\omega^{[l]} = \frac{1}{m}dz^{[l]}A^{[l-1]^T}$$
 
 $$db^{[l]} = \frac{1}{m} np.sum(dz^{[l]}, axis = 1, keepdims = True)$$
 
@@ -45,7 +45,7 @@ $$dA^{[l-1]} = \omega^{[l]^T}dz^{[l]}$$
 ----
 ## Hyperparameters
 Being effective in developing your deep neural networks requires that you not only organize your parameters well but also your hyperparameters. 
-- learning rate /alpha  
+- learning rate \alpha  
 - iterations  
 - hidden layers L
 - hidden units $$n^{[1]}, n^{[2]}, ...$$  
@@ -55,4 +55,6 @@ These are hyperparameters that control the ultimate parameters W and b.
 Others: momentum, minibatch size, various forms of regularization parameters, etc.
 
 ----
+## Words
 **Applied deep learning is a very empirical process.**
+**Deep learning technology is very good at learning very flexible and complex functions used to learn X to Y mappings.**
