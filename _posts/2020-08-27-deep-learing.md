@@ -61,5 +61,5 @@ Others: momentum, minibatch size, various forms of regularization parameters, et
 
 ----
 ## Reference
-Andrew Y Ng. _Deep Learning Specialization_ [Video]. Coursera.  
+Andrew Y Ng. (n.d.). _Deep Learning Specialization_[Video]. Coursera.  
 <https://www.coursera.org/specializations/deep-learning/>
