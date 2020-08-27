@@ -39,4 +39,6 @@ $$db^{[l]} = \frac{1}{m} np.sum(dz^{[l]}, axis = 1, keepdims = True)$$
 
 $$dA^{[l-1]} = \omega^{[l].T}dz^{[l]}$$
 
+### Process
+![an image alt text]({{ site.baseurl }}/images/DL1.png "an image title")
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
