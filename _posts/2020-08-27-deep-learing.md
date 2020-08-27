@@ -37,8 +37,22 @@ $$d\omega^{[l]} = \frac{1}{m}dz^{[l]}A^{[l-1].T}$$
 
 $$db^{[l]} = \frac{1}{m} np.sum(dz^{[l]}, axis = 1, keepdims = True)$$
 
-$$dA^{[l-1]} = \omega^{[l].T}dz^{[l]}$$
+$$dA^{[l-1]} = \omega^{[l]^T}dz^{[l]}$$
 
 ### A simple example
 ![an image alt text]({{ site.baseurl }}/images/DL1.png "an image title")
 
+----
+## Hyperparameters
+Being effective in developing your deep neural networks requires that you not only organize your parameters well but also your hyperparameters. 
+- learning rate /alpha  
+- iterations  
+- hidden layers L
+- hidden units $$n^{[1]}, n^{[2]}, ...$$  
+
+These are hyperparameters that control the ultimate parameters W and b.
+
+Others: momentum, minibatch size, various forms of regularization parameters, etc.
+
+----
+**Applied deep learning is a very empirical process.**
