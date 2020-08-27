@@ -55,6 +55,11 @@ These are hyperparameters that control the ultimate parameters W and b.
 Others: momentum, minibatch size, various forms of regularization parameters, etc.
 
 ----
-## Words
+## Some words
 **Applied deep learning is a very empirical process.**
 **Deep learning technology is very good at learning very flexible and complex functions used to learn X to Y mappings.**
+
+----
+## Reference
+Andrew Y Ng. _Deep Learning Specialization_ [Video]. Coursera.  
+<https://www.coursera.org/specializations/deep-learning/>
