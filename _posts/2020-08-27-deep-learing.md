@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Forward propagation & Backward propagation for layer l
 
