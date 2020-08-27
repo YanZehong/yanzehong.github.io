@@ -45,7 +45,7 @@ $$dA^{[l-1]} = \omega^{[l]^T}dz^{[l]}$$
 ----
 ## Hyperparameters
 Being effective in developing your deep neural networks requires that you not only organize your parameters well but also your hyperparameters. 
-- learning rate \alpha  
+- learning rate $$\alpha$$  
 - iterations  
 - hidden layers L
 - hidden units $$n^{[1]}, n^{[2]}, ...$$  
