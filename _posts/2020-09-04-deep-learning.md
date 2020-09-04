@@ -3,13 +3,13 @@ published: true
 ---
 Practical aspects of deep learning.
 
-## Train/Dev/Test sets
-### Basic rules for spliting datasets  
+## 1.Train/Dev/Test sets
+### 1.1 Basic rules for spliting datasets  
 train/test: 70% / 30%  
 train/dev/test: 60% / 20% / 20%  
 Big data era (like 1,000,000 examples): 98 / 1 / 1 or 99.5 / 0.4 / 0.1  
 
-### Mismatched train/test distribution
+### 1.2 Mismatched train/test distribution
 For example,  
 - Training set: cat pictures from webpages  
 - Dev/test set: cat pictures from users using apps  
@@ -17,8 +17,8 @@ For example,
 **Make sure dev and test come from the same distribution.**  
 **Not having a test set might be okay. (only dev set.)**
 
-## Bias/Variance
-
+## 2.Bias/Variance
+### 2.1 Basic rules for spliting datasets  
 
 ----
 ## Reference
