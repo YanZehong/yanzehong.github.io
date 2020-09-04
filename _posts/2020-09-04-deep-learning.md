@@ -5,8 +5,8 @@ Practical aspects of deep learning.
 
 ## 1.Train/Dev/Test sets
 ### 1.1 Basic rules for spliting datasets  
-train/test: 70% / 30%  
-train/dev/test: 60% / 20% / 20%  
+train/test: 70 / 30 (%)  
+train/dev/test: 60 / 20 / 20 (%)  
 Big data era (like 1,000,000 examples): 98 / 1 / 1 or 99.5 / 0.4 / 0.1  
 
 ### 1.2 Mismatched train/test distribution
