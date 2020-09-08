@@ -26,7 +26,9 @@ solution: more data; regularization
 ### 2.2 Regularization
 $$\min_{\omega, b} J(\omega, b)$$  
 $$J(w, b) = \frac{1}{m} \sum{i=1}{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$
-$$ _L2
+
+**$$L_{2}$$ regularization**  
+**$$L_{1}$$ regularization**
 
 ----
 ## Reference
