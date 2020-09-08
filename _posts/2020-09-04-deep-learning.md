@@ -29,7 +29,7 @@ To prevent overfitting
 
 $$\min_{\omega, b} J(\omega, b)$$
 
-$$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$  
+$$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{'(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$  
 
 **$$L_{2}$$ Regularization**
 
