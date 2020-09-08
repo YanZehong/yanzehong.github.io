@@ -32,13 +32,13 @@ $$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{'(i)}, y^{(i)}) + \frac{\lambda
 
 If we set $$\lambda$$ to be very very large, the punishment term will be large, which makes the curve become a horizontal line with all coefficient tending to 0. _E.g._, if $$\lambda = 10000$$, we will get $$\omega_{1} \approx 0, \omega_{2} \approx 0, ... y^{'} \approx \omega_{0}$$. By contrast, the curve will overfit when is too $$\lambda$$ small.  
 Therefore, the general approach is to use validation to select the appropriate $$\lambda$$, and then apply it on the test set.  
-### Linear regression with regularization
+**Linear regression with regularization**  
 ![]({{site.baseurl}}/images/bias:variance1.png)
 
-### B/V as a function of the regulatization parameter
+**B/V as a function of the regulatization parameter**  
 ![]({{site.baseurl}}/images/bias:variance2.png)
 
-### Learning curve
+**Learning curve**  
 Draw the Learning Curve to help us understand whether the current model is in the bias or variance stage. Thus, we can adjust the model according to it.
 
 ![]({{site.baseurl}}/images/bias:variance3.png)
@@ -48,6 +48,9 @@ In the case of high bias, increase the number of samples m, we can see that the 
 ![]({{site.baseurl}}/images/bias:variance4.png)
 
 However, for the high variance problem, if the number of m is increased, it will help decrease the cost of the model.
+
+**Methods to debug a learning algorithm**  
+<span style="color:blue">some *fixes high variance.* text</span>
 
 ### 2.2 Regularization
 To prevent overfitting  
