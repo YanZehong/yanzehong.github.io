@@ -24,14 +24,18 @@ solution:bigger network; train longer
 - High variation(dev set performance)  
 solution: more data; regularization  
 ### 2.2 Regularization
-$$\min_{\omega, b} J(\omega, b)$$  
+To prevent overfitting
+
+$$\min_{\omega, b} J(\omega, b)$$
 
 $$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$  
 
 **$$L_{2}$$ Regularization**  
+
 $$||\omega||_{2}^{2} = \sum_{j=1}^{n_{x}} \omega_{j}^{2} = \omega^{T}\omega$$  
 
-**$$L_{1}$$ Regularization**  
+**$$L_{1}$$ Regularization**
+
 $$\frac{\lambda}{2m}\sum_{i=1}^{n_{x}} |\omega_{i}| = \frac{\lambda}{2m}||\omega||_{1}$$  
 
 ----
