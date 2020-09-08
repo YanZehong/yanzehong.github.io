@@ -32,7 +32,7 @@ $$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}
 $$||\omega||_{2}^{2} = \sum_{j=1}^{n_{x}} \omega_{j}^{2} = \omega^{T}\omega$$  
 
 **$$L_{1}$$ Regularization**  
-$$\frac{\lambda}{2m}\sum_{i=1}^{n_{x}} |\omega_{i}| = \frac{\lambda}{2m}||\omega||_1$$  
+$$\frac{\lambda}{2m}\sum_{i=1}^{n_{x}} |\omega_{i}| = \frac{\lambda}{2m}||\omega||_{1}$$  
 
 ----
 ## Reference
