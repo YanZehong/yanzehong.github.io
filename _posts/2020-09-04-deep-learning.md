@@ -30,13 +30,14 @@ $$y^{'} = \omega_{0} + \omega_{1}x + \omega_{2}x^{2} + \omega_{3}x^{3} + ...$$
 
 $$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{'(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$
 
-If we set $$\lambda$$ to be very very large, the punishment term will be large, which makes the curve become a horizontal line with all coefficient tending to 0. For example, $$\lambda = 10000, \omega_{1} \approx 0, \omega_{2} \approx 0, ... y^{'} \approx \omega_{0}$$  
+If we set $$\lambda$$ to be very very large, the punishment term will be large, which makes the curve become a horizontal line with all coefficient tending to 0. _E.g._, $$\lambda = 10000, \omega_{1} \approx 0, \omega_{2} \approx 0, ... y^{'} \approx \omega_{0}$$  
 By contrast, the curve will overfit when is too $$\lambda$$ small.  
 Therefore, the general approach is to use validation to select the appropriate $$\lambda$$, and then apply it on the test set.  
-![Linear regression with regularization]({{site.baseurl}}/images/bias:variance1.png)
+### Linear regression with regularization
+![]({{site.baseurl}}/images/bias:variance1.png)
 
-
-![B/V as a function of the regulatization parameter]({{site.baseurl}}//images/bias:variance2.png)
+### B/V as a function of the regulatization parameter
+![]({{site.baseurl}}//images/bias:variance2.png)
 
 
 ### 2.2 Regularization
