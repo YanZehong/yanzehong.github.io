@@ -36,11 +36,11 @@ Therefore, the general approach is to use validation to select the appropriate $
 ![]({{site.baseurl}}/images/bias:variance1.png)
 
 ### B/V as a function of the regulatization parameter
-![]({{site.baseurl}}//images/bias:variance2.png)
+![]({{site.baseurl}}/images/bias:variance2.png)
 
-![]({{site.baseurl}}//images/bias:variance3.png)
+![]({{site.baseurl}}/images/bias:variance3.png)
 
-![]({{site.baseurl}}//images/bias:variance4.png)
+![]({{site.baseurl}}/images/bias:variance4.png)
 
 ### 2.2 Regularization
 To prevent overfitting  
