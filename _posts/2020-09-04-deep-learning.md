@@ -23,6 +23,10 @@ For example,
 solution:bigger network; train longer  
 - High variation(dev set performance)  
 solution: more data; regularization
+![]({{site.baseurl}}/images/bias:variance1.png)
+
+![B/V as a function of the regulatization parameter $$\lambda$$]({{site.baseurl}}//images/bias:variance1.png)
+
 
 ### 2.2 Regularization
 To prevent overfitting  
