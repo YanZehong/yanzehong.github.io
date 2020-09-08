@@ -18,11 +18,12 @@ For example,
 **Not having a test set might be okay. (only dev set.)**
 
 ## 2.Basic recipie for machine learning
-### 2.1 Bias/Variance --tradeoff
+### 2.1 Bias/Variance (tradeoff)
 - High bias (training data performance)  
 solution:bigger network; train longer  
 - High variation(dev set performance)  
-solution: more data; regularization  
+solution: more data; regularization
+
 ### 2.2 Regularization
 To prevent overfitting
 
@@ -30,7 +31,7 @@ $$\min_{\omega, b} J(\omega, b)$$
 
 $$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$  
 
-**$$L_{2}$$ Regularization**  
+**$$L_{2}$$ Regularization**
 
 $$||\omega||_{2}^{2} = \sum_{j=1}^{n_{x}} \omega_{j}^{2} = \omega^{T}\omega$$  
 
