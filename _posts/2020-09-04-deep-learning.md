@@ -25,7 +25,8 @@ solution:bigger network; train longer
 solution: more data; regularization
 
 ### 2.2 Regularization
-To prevent overfitting
+To prevent overfitting  
+Objective function:
 
 $$\min_{\omega, b} J(\omega, b)$$
 
@@ -42,6 +43,15 @@ $$\frac{\lambda}{2m}\sum_{i=1}^{n_{x}} |\omega_{i}| = \frac{\lambda}{2m}||\omega
 **Frobenius norm**
 
 $$||\omega^{[l]}||_{F}^{2} = \sum_{i=1}^{n_{[l]}}\sum_{j=1}^{n_{[l-1]}}(\omega_{i,j}^{[l]})^{2}$$
+
+**Weight decay**  
+Update
+
+$$\omega^{[l]} = \omega^{[l]}-\alphad\omega^{[l]}$$
+
+$$\omega^{[l]} = \omega^{[l]}-\alpha[(from backprop) + \frac{\lambda}{m}\omega^{[l]}]$$
+
+$$  = \omega^{[l]} - \frac{\alpha\lambda}{m}\omega^{[l]} - \alpha(from backprop)$$
 
 ----
 ## Reference
