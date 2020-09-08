@@ -49,9 +49,9 @@ Update
 
 $$\omega^{[l]} = \omega^{[l]}-\alpha d\omega^{[l]}$$
 
-$$\omega^{[l]} = \omega^{[l]}-\alpha[(from backprop) + \frac{\lambda}{m}\omega^{[l]}]$$
+$$\omega^{[l]} = \omega^{[l]}-\alpha[(from-backprop) + \frac{\lambda}{m}\omega^{[l]}]$$
 
-$$  = \omega^{[l]} - \frac{\alpha\lambda}{m}\omega^{[l]} - \alpha(from backprop)$$
+$$   = \omega^{[l]} - \frac{\alpha\lambda}{m}\omega^{[l]} - \alpha(from-backprop)$$
 
 ----
 ## Reference
