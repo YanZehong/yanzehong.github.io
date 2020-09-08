@@ -50,12 +50,12 @@ In the case of high bias, increase the number of samples m, we can see that the 
 However, for the high variance problem, if the number of m is increased, it will help decrease the cost of the model.
 
 **Methods to debug a learning algorithm**  
-- Get more training examples <span style="color:blue">*fixes high variance.* text</span>  
-- Try samller sets of features <span style="color:blue">*fixes high variance.* text</span>  
-- Try getting additional features <span style="color:blue">*fixes high bias.* text</span>  
-- Try adding polynomial features $$(x_{1}^{2},x_{2}^{4}, etc.)$$ <span style="color:blue">*fixes high bias.* text</span>  
-- Try decreasing $$\lambda$$ <span style="color:blue">*fixes high bias.* text</span>  
-- Try increasing $$\lambda$$ <span style="color:blue">*fixes high variance.* text</span>  
+- Get more training examples <span style="color:blue">*fixes high variance.*</span>  
+- Try samller sets of features <span style="color:blue">*fixes high variance.*</span>  
+- Try getting additional features <span style="color:blue">*fixes high bias.*</span>  
+- Try adding polynomial features $$(x_{1}^{2},x_{2}^{4}, etc.)$$ <span style="color:blue">*fixes high bias.*</span>  
+- Try decreasing $$\lambda$$ <span style="color:blue">*fixes high bias.*</span>  
+- Try increasing $$\lambda$$ <span style="color:blue">*fixes high variance.*</span>  
 
 ### 2.2 Regularization
 To prevent overfitting  
