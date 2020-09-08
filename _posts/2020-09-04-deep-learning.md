@@ -25,7 +25,7 @@ high variation(dev set performance)
 solution: more data; regularization  
 ### 2.2 Regularization
 $$\min_{\omega, b} J(\omega, b)$$  
-$$J(w, b) = \frac{1}{m} \sum{i=1}{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$
+$$J(\omega, b) = \frac{1}{m} \sum_{i=1}^{m} L(y^{(i)}, y^{(i)}) + \frac{\lambda}{2m} ||\omega||_{2}^{2}$$
 
 **$$L_{2}$$ regularization**  
 **$$L_{1}$$ regularization**
