@@ -38,9 +38,16 @@ Therefore, the general approach is to use validation to select the appropriate $
 ### B/V as a function of the regulatization parameter
 ![]({{site.baseurl}}/images/bias:variance2.png)
 
+### Learning curve
+Draw the Learning Curve to help us understand whether the current model is in the bias or variance stage. Thus, we can adjust the model according to it.
+
 ![]({{site.baseurl}}/images/bias:variance3.png)
 
+In the case of high bias, increase the number of samples m, we can see that the error will not change much soon, and the cost of training and validation set will be very large.
+
 ![]({{site.baseurl}}/images/bias:variance4.png)
+
+However, for the high variance problem, if the number of m is increased, it will help decrease the cost of the model.
 
 ### 2.2 Regularization
 To prevent overfitting  
