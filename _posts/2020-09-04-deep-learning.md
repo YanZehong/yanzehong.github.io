@@ -40,6 +40,7 @@ $$||\omega||_{2}^{2} = \sum_{j=1}^{n_{x}} \omega_{j}^{2} = \omega^{T}\omega$$
 $$\frac{\lambda}{2m}\sum_{i=1}^{n_{x}} |\omega_{i}| = \frac{\lambda}{2m}||\omega||_{1}$$  
 
 **Frobenius norm**
+
 $$||\omega^{[l]}||_{F}^{2} = \sum_{i=1}^{n_{[l]}}\sum_{j=1}^{n_{[l-1]}}(\omega_{i,j}^{[l]})^{2}$$
 
 ----
