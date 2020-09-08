@@ -19,9 +19,9 @@ For example,
 
 ## 2.Basic recipie for machine learning
 ### 2.1 Bias/Variance --tradeoff
-high bias (training data performance)  
+-high bias (training data performance)  
 solution:bigger network; train longer  
-high variation(dev set performance)  
+-high variation(dev set performance)  
 solution: more data; regularization  
 ### 2.2 Regularization
 $$\min_{\omega, b} J(\omega, b)$$  
