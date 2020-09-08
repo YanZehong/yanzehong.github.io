@@ -17,8 +17,14 @@ For example,
 **Make sure dev and test come from the same distribution.**  
 **Not having a test set might be okay. (only dev set.)**
 
-## 2.Bias/Variance
-### 2.1 Basic rules for splitting datasets  
+## 2.Basic recipie for machine learning
+### 2.1 Bias/Variance --tradeoff
+high bias (training data performance)  
+solution:bigger network; train longer  
+high variation(dev set performance)  
+solution: more data; regularization  
+### 2.2 Regularization
+$$\min_{\omega, b} J{\omega, b}$$
 
 ----
 ## Reference
