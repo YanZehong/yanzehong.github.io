@@ -62,6 +62,8 @@ Applied deep learning is a very empirical process.
 
 Deep learning technology is very good at learning very flexible and complex functions used to learn X to Y mappings.
 
+In general, the number of neurons in the previous layer gives us the number of columns of the weight matrix, and the number of neurons in the current layer gives us the number of rows in the weight matrix.
+
 ----
 ## Reference
 Andrew Y Ng. (n.d.). _Deep Learning Specialization_ [Video]. Coursera.  
