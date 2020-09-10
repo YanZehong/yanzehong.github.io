@@ -24,6 +24,9 @@ $$a^{[l]} = np.multiply(a^{[l]},d^{[l]})\quad \textrm{or} \; a^{[l]} *= d^{[l]}$
 
 $$a^{[l]} = a^{[l]}\: / \: keep-prob$$
 
+## Others
+**There is no dropout while making prediction at test time.**
+
 ----
 ## Reference
 Andrew Y Ng. (n.d.). _Deep Learning Specialization_ [Video]. Coursera.  
