@@ -17,7 +17,7 @@ $$d^{[l]} = np.random.rand(a^{[l]}.shape[0], a^{[l]}.shape[1]) < keep-prob$$
 
 (2)Element-wise multiplication
 
-$$a^{[l]} = np.multiply(a^{[l]},d^{[l]})\quad \textrm{or} \, a^{[l]} *= d^{[l]}$$
+$$a^{[l]} = np.multiply(a^{[l]},d^{[l]})\quad \textrm{or} \; a^{[l]} *= d^{[l]}$$
 
 
 (3)Scale up, makeing sure the expected value of $$z^{[l+1]}$$ remain the same.
