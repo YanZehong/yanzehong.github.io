@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-Practical aspects of deep learning.
+Practical aspects of deep learning.In addition, we will illustrate why regularization reduces overfitting.
 
 ## 1.Train/Dev/Test sets
 ### 1.1 Basic rules for splitting datasets  
