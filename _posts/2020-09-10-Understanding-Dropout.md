@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 A powerful regularization technique. We will see how it works in this post.
 
