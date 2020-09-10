@@ -21,7 +21,7 @@ $$a^{[l]} = np.multiply(a^{[l]},d^{[l]})    # a^{[l]} *= d^{[l]}$$
 
 (3)Scale up, makeing sure the expected value of $$z^{[l+1]}$$ remain the same.
 
-$$a^{[l]} = a^{[l]} / keep-prob$$
+$$a^{[l]} = a^{[l]} /  keep-prob$$
 
 ----
 ## Reference
