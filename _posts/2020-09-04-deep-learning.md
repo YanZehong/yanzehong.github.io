@@ -101,7 +101,7 @@ Two task:
 ![]({{site.baseurl}}/images/other_reg_2.png)
 
 Alternative: **L2 regularization**
-Downside: you might have to try a lot of values of the regularization parameter $$/lambda$$
+Downside: you might have to try a lot of values of the regularization hyperparameter $$/lambda$$
 
 ----
 ## Reference
