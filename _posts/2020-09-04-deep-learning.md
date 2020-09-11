@@ -89,11 +89,14 @@ $$   = \omega^{[l]} - \frac{\alpha\lambda}{m}\omega^{[l]} - \alpha(from-backprop
 ### 2.3 Other regularization methods
 - Data augmentation
 
-![]({{site.baseurl}}/images/other:reg:1.png)
+![]({{site.baseurl}}/images/other_reg_1.png)
 
 - Early stopping
 
-![]({{site.baseurl}}/images/other:reg:2.png)
+Principle: Orthogonalization  
+Two task:(1) An algorithm to optimize the cost function j, like gradient descent, momentum, RMSProp, Adam, etc.(2) Not overfit, such as regularization, getting more data and so on.
+
+![]({{site.baseurl}}/images/other_reg_2.png)
 
 ----
 ## Reference
