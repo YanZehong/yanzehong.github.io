@@ -24,8 +24,17 @@ $$a^{[l]} = np.multiply(a^{[l]},d^{[l]})\quad \textrm{or} \; a^{[l]} *= d^{[l]}$
 
 $$a^{[l]} = a^{[l]}\: / \: keep-prob$$
 
-## Others
+## 3.Prediction
 **There is no dropout while making prediction at test time.**
+
+## 4.Why does it work?
+Can't rely on any one feature, so have to spread out/shrink weights.
+
+For the layer with the biggest weight matrix, a lot of parameters, you should set a relatively low keep-prob. On the contrary, whereas for different layers where you might less worry about over-fitting, you could have a higher keep-prob, like 0.7 or 1. (As shown in the following figure.)
+
+![]({{site.baseurl}}/images/dropout2.png)
+
+After dropping out, the cost function is no longer well-defined. Consequently, you need turn off drop out at first and set key prop equals one. Then, you run your code and make sure that it is monotonically decreasing cost. Finally, turn on drop out and hope that I didn't introduce bugs into my code during drop out.
 
 ----
 ## Reference
