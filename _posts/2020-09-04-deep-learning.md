@@ -86,6 +86,15 @@ $$\omega^{[l]} = \omega^{[l]}-\alpha[(from-backprop) + \frac{\lambda}{m}\omega^{
 
 $$   = \omega^{[l]} - \frac{\alpha\lambda}{m}\omega^{[l]} - \alpha(from-backprop)$$
 
+### 2.3 Other regularization methods
+- Data augmentation
+
+![]({{site.baseurl}}/images/other:reg:1.png)
+
+- Early stopping
+
+![]({{site.baseurl}}/images/other:reg:2.png)
+
 ----
 ## Reference
 Andrew Y Ng. (n.d.). _Deep Learning Specialization_ [Video]. Coursera.  
