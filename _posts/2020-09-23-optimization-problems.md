@@ -29,11 +29,24 @@ $$tanh: \sqrt{\frac{1}{n^{[l-1]}}}$$
 $$Xavier: \sqrt{\frac{2}{n^{[l-1]}+n^{[l]}}}$$
 
 ## 3.Gradient checking
-### Nemerical approximation of gradients
+### 3.1 Nemerical approximation of gradients
 
 $$\frac{f(\theta+\epsilon)-f(\theta-\epsilon)}{2\epsilon} \approx f^{'}(\theta)$$
 
 ![]({{site.baseurl}}/images/optimization2.png)
+
+### 3.2 Steps
+(1)Reshape all parameters, $$\omega^{[1]},b^{[1]}...\omega^{[L]},b^{[L]}$$,into a giant vector $$\theta$$  
+(2)Reshape $$d\omega^{[1]},db^{[1]}...d\omega^{[L]},db^{[L]}$$,into a big vector $$d\theta$$  
+(3)Implement a for loop  
+![]({{site.baseurl}}/images/optimization3.png)
+
+### 3.3 Notes about grad check
+- Don't use gradient check in training - only to debug.  
+- If algorithm fails grad check, look at components to try to identify bug. For example, the values of $$d\theta_{approx}[i]$$ and $$d\theta[i]$$. Then, locate $$d\omega^{[1]},db^{[1]}$$ in certain layer.  
+- Remember regularization.  
+- Doesn't work with dropout.You need to set $$keep-prob = 1.0$$  
+- Run at random initialization; perhaps again after some training.  
 
 ----
 ## Reference
