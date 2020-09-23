@@ -26,6 +26,12 @@ $$tanh: \sqrt{\frac{1}{n^{[l-1]}}}$$
 
 $$Xavier: \sqrt{\frac{2}{n^{[l-1]}+n^{[l]}}}$$
 
+## 3.Gradient checking
+### Nemerical approximation of gradients
+
+$$\frac{f(\theta+\epsilon)-f(\theta-\epsilon)}{2\epsilon} \approx f^{'}(\theta)$$
+
+![]({{site.baseurl}}/images/optimization2.png)
 
 ----
 ## Reference
