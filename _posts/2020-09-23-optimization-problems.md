@@ -15,7 +15,8 @@ $$x = \frac{x - \mu}{\sigma}$$
 
 ## 2.Vanishing / Exploding gradients
 When you are training a very deep network, the derivatives or slopes sometimes would get either very small ($$\omega^{[l]}<1$$) or very big ($$\omega^{[l]}>1$$), which makes training difficult.  
-Solution: careful choices of the random weight initialization.
+
+Solution: careful choices of the random weight initialization.  
 ReLu activation function:
 
 $$\omega^{[l]} = np.random.randn(shape)*np.sqrt(\frac{2}{n^{[l-1]}})$$
