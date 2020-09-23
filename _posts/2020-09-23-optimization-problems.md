@@ -43,7 +43,7 @@ $$\frac{f(\theta+\epsilon)-f(\theta-\epsilon)}{2\epsilon} \approx f^{'}(\theta)$
 
 ### 3.3 Notes about grad check
 - Don't use gradient check in training - only to debug.  
-- If algorithm fails grad check, look at components to try to identify bug. For example, the values of $$d\theta_{approx}[i]$$ and $$d\theta[i]$$. Then, locate $$d\omega^{[1]},db^{[1]}$$ in certain layer.  
+- If algorithm fails grad check, look at components to try to identify bug. For example, the values of $$d\theta_{approx}[i]$$ and $$d\theta[i]$$. Then, locate $$d\omega^{[l]},db^{[l]}$$ in certain layer.  
 - Remember regularization.  
 - Doesn't work with dropout.You need to set $$keep-prob = 1.0$$  
 - Run at random initialization; perhaps again after some training.  
