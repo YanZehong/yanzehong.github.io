@@ -27,9 +27,9 @@ The code above is called doing one epoch of training and epoch means a single pa
 
 ### Choose mini-batch size (A hyper-parameter)
 
-if it is a small training set, like m <= 2000, use batch gradient descent (size = m).  
-Typical mini-batch size: 64, 128, 256, 512  
-Make sure mini-batch $$(X^{\{ t \}},Y^{\{ t \}})$$ fits in CPU/GPU memory.  
+(1) If it is a small training set, like m <= 2000, use batch gradient descent (size = m).  
+(2) Typical mini-batch size: 64, 128, 256, 512  
+(3) Make sure mini-batch $$(X^{\{ t \}},Y^{\{ t \}})$$ fits in CPU/GPU memory.  
 
 ----
 ## Reference
