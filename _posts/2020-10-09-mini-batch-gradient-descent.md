@@ -15,10 +15,21 @@ $$X = [X^{\{ 1 \}},X^{\{ 2 \}},X^{\{ 3 \}},...,X^{\{ 5000 \}}]$$
 
 $$Y = [Y^{\{ 1 \}},Y^{\{ 2 \}},Y^{\{ 3 \}},...,Y^{\{ 5000 \}}]$$
 
-## 2.How to do it
+## 2.Implementation
 ![]({{site.baseurl}}/images/minibatch_1.PNG)
 
 The code above is called doing one epoch of training and epoch means a single pass through the training set. A single passs allows you to take only one gradient descent step. With mini-batch gradient descent, a single pass through the traning set (one epoch) allows you to take 5,000 gradient descent steps. Of course, you can also add multiple passes through the training set until it hopefully converges approximately.
+
+## 3.Details
+![]({{site.baseurl}}/images/minibatch_2.PNG)
+
+![]({{site.baseurl}}/images/minibatch_3.PNG)
+
+### Choose mini-batch size (A hyper-parameter)
+
+if it is a small training set, like m <= 2000, use batch gradient descent (size = m).  
+Typical mini-batch size: 64, 128, 256, 512  
+Make sure mini-batch $$(X^{\{ t \}},Y^{\{ t \}})$$ fits in CPU/GPU memory.  
 
 ----
 ## Reference
