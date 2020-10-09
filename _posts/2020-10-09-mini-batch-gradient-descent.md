@@ -16,10 +16,9 @@ $$X = [X^{\{ 1 \}},X^{\{ 2 \}},X^{\{ 3 \}},...,X^{\{ 5000 \}}]$$
 $$Y = [Y^{\{ 1 \}},Y^{\{ 2 \}},Y^{\{ 3 \}},...,Y^{\{ 5000 \}}]$$
 
 ## 2.How to do it
-
 ![]({{site.baseurl}}/images/mini_batch_1.PNG)
 
-The code above  is called doing one epoch of training and epoch means a single pass through the training set. A single passs allows you to take only one gradient descent step. With mini-batch gradient descent, a single pass through the traning set (one epoch) allows you to take 5,000 gradient descent steps.
+The code above is called doing one epoch of training and epoch means a single pass through the training set. A single passs allows you to take only one gradient descent step. With mini-batch gradient descent, a single pass through the traning set (one epoch) allows you to take 5,000 gradient descent steps.
 
 ----
 ## Reference
