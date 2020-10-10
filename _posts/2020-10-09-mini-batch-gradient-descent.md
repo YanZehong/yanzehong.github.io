@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-An optimizaation algorithm that will enable you to train neural network much faster in the regime of big data.
+An optimization algorithm that will enable you to train neural network much faster in the regime of big data.
 
 ## 1.Definition
 
