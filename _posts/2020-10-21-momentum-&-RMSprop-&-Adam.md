@@ -26,6 +26,20 @@ Similar to momentum, it has the effects of damping out the oscillations in gradi
 ![]({{site.baseurl}}/images/rmsprop_1.PNG)
 
 ## 3.Adam
+Many optimization algorithms proposed by some well-known researchers showed that they worked weill in a few problems. However, those algorithms subsequently were shown not to generalize that well to the wide range of neural network.  
+Adam optimization algorithm is basically combining momentum with RMSprop. Let's see how it works.
+
+> Initialization: $$v_{dW}=0, s_{dW}=0, v_{db}=0, s_{db}=0$$  
+> on iteration t:
+>> Compute $$dW, db$$ on the current mini-batch  
+>> $$v_{dW}=\beta_{1} v_{dW} + (1-\beta_{1})dW$$  
+>> $$v_{db}=\beta_{1} v_{db} + (1-\beta_{1})db$$  
+>> $$s_{dW}=\beta_{2} s_{dW} + (1-\beta_{2})dW^{2}$$  
+>> $$s_{db}=\beta_{2} s_{db} + (1-\beta_{2})db^{2}$$  
+>> $$W = W - \alpha v_{dW}, b = b - \alpha v_{db}$$  
+>> bias correction  
+>> $$v_{dW}^{corrected} = v_{dW} / (1 - \beta_{1}^{t}), v_{db}^{corrected} = v_{db} / (1 - \beta_{1}^{t})$$  
+>> $$s_{dW}^{corrected} = s_{dW} / (1 - \beta_{2}^{t}), s_{db}^{corrected} = s_{db} / (1 - \beta_{2}^{t})$$  
 
 ----
 ## Reference
