@@ -36,10 +36,10 @@ Adam optimization algorithm is basically combining momentum with RMSprop. Let's 
 >> $$v_{db}=\beta_{1} v_{db} + (1-\beta_{1})db$$  
 >> $$s_{dW}=\beta_{2} s_{dW} + (1-\beta_{2})dW^{2}$$  
 >> $$s_{db}=\beta_{2} s_{db} + (1-\beta_{2})db^{2}$$  
->> $$W = W - \alpha v_{dW}, b = b - \alpha v_{db}$$  
->> bias correction  
+>> Implement bias correction  
 >> $$v_{dW}^{corrected} = v_{dW} / (1 - \beta_{1}^{t}), v_{db}^{corrected} = v_{db} / (1 - \beta_{1}^{t})$$  
 >> $$s_{dW}^{corrected} = s_{dW} / (1 - \beta_{2}^{t}), s_{db}^{corrected} = s_{db} / (1 - \beta_{2}^{t})$$  
+>> $$W = W - \alpha \frac{v_{dW}^{corrected}}{\sqrt{s_{dW}^{corrected}}+\epsilon}, b = b - \alpha \frac{v_{db}^{corrected}}{\sqrt{s_{db}^{corrected}}+\epsilon}$$  
 
 ----
 ## Reference
