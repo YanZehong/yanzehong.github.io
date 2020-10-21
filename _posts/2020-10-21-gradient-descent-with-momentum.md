@@ -1,18 +1,21 @@
 ---
 published: true
 ---
-Introduce an optimization algorithm that are much faster than gradient descent.
+An optimization algorithm works almost always faster than the standard gradient descent algorithm.
 
-## 1.Intuition
+## 1.Description
+After applying momentum, the oscillations in the vertical direction will tend to average out to something closer to zero. Whereas, on the horizontal direction, the average will still be pretty big. You can find it ends up with a few iteration, much smaller oscillations in the vertical direction, but are more directed to move toward the minimum in horizontal direction.
 
-$$v_{t}=\beta v_{t-1} + (1-\beta)\theta_{t}$$
+![]({{site.baseurl}}/images/momentum_1.PNG)
 
-$$v_{t} \approx \frac{1}{1-\beta}$$
-
-since $$(1-\epsilon)^{1/\epsilon}=\frac{1}{e}$$ and $$\epsilon = 1 - \beta$$
-
-![]({{site.baseurl}}/images/ewa_1.PNG)
-
+## 2.Implementation
+On iteration t:  
+  Compute $$dW, db$$ on the current mini-batch
+  $$v_{dW}=\beta v_{dW} + (1-\beta)dW$$
+  $$v_{db}=\beta v_{db} + (1-\beta)db$$
+  $$W = W - \alpha v_{dW}, b = b - \alpha v_{db}$$
+  
+Hyperparameters:$$\alpha, \beta$$
 
 ----
 ## Reference
