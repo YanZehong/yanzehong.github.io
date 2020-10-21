@@ -19,7 +19,7 @@ since $$(1-\epsilon)^{1/\epsilon}=\frac{1}{e}$$ and $$\epsilon = 1 - \beta$$
 - Just one line of code.  
 
 ## 3.Bias correction
-A technical detail that can make you computation of averages more accurately, especially in initial phase. 
+A technical detail that can make you computation of averages more accurately, especially in initial phase.  
 Problem: When implementing the formula ($$\beta=0.98$$), you won't get the green curve. Actually, you get the purple curve shown here, which starts off really low.
 
 ![]({{site.baseurl}}/images/ewa_2.PNG)
