@@ -32,20 +32,18 @@ Adam optimization algorithm is basically combining momentum with RMSprop. Let's 
 > Initialization: $$v_{dW}=0, s_{dW}=0, v_{db}=0, s_{db}=0$$  
 > on iteration t:
 >> Compute $$dW, db$$ on the current mini-batch  
->> $$v_{dW}=\beta_{1} v_{dW} + (1-\beta_{1})dW$$  
->> $$v_{db}=\beta_{1} v_{db} + (1-\beta_{1})db$$  
->> $$s_{dW}=\beta_{2} s_{dW} + (1-\beta_{2})dW^{2}$$  
->> $$s_{db}=\beta_{2} s_{db} + (1-\beta_{2})db^{2}$$  
+>> $$v_{dW}=\beta_{1} v_{dW} + (1-\beta_{1})dW, v_{db}=\beta_{1} v_{db} + (1-\beta_{1})db$$  
+>> $$s_{dW}=\beta_{2} s_{dW} + (1-\beta_{2})dW^{2}, s_{db}=\beta_{2} s_{db} + (1-\beta_{2})db^{2}$$  
 >> Implement bias correction  
 >> $$v_{dW}^{corrected} = \frac{v_{dW}}{1 - \beta_{1}^{t}}, v_{db}^{corrected} = \frac{v_{db}}{1 - \beta_{1}^{t}}$$  
 >> $$s_{dW}^{corrected} = \frac{s_{dW}}{1 - \beta_{2}^{t}}, s_{db}^{corrected} = \frac{s_{db}}{1 - \beta_{2}^{t}}$$  
 >> $$W = W - \alpha \frac{v_{dW}^{corrected}}{\sqrt{s_{dW}^{corrected}}+\epsilon}, b = b - \alpha \frac{v_{db}^{corrected}}{\sqrt{s_{db}^{corrected}}+\epsilon}$$ 
 
 ### 3.1 Hyperparameters choice
-(1)$$\alpha$$ needs to be tune.  
-(2)$$\beta_{1} = 0.9$$  
-(3)$$\beta_{2} = 0.999$$  
-(4)$$\epsilon = 10^{-8}$$  
+- $$\alpha$$ needs to be tune.  
+- $$\beta_{1} = 0.9$$  
+- $$\beta_{2} = 0.999$$  
+- $$\epsilon = 10^{-8}$$  
 
 ----
 ## Reference
