@@ -8,7 +8,7 @@ After applying momentum, the oscillations in the vertical direction will tend to
 
 ![]({{site.baseurl}}/images/momentum_1.PNG)
 
-## 2.Implementation
+### 1.1 Implementation
 > Initialization: $$v_{dW}=0, v_{db}=0$$  
 > on iteration t:
 >> Compute $$dW, db$$ on the current mini-batch  
@@ -20,10 +20,12 @@ Hyperparameters:$$\alpha, \beta$$. Generally, $$\beta=0.9$$, representing averag
 
 Another version of momentum is $$v_{dW}=\beta v_{dW} + dW$$, the perpose is that $$v_{dW}$$ ends up being scaled by $$\frac{1}{1-\beta}$$. So when you are performing these gradient descent updates, $$\alpha$$ just needs to change by a corresponding value of $$\frac{1}{1-\beta}$$.
 
-## 3.RMSprop
+## 2.RMSprop
 Similar to momentum, it has the effects of damping out the oscillations in gradient descent, in mini-batch descent. In addition, it allows you to use a larger learning rate $$\alpha$$, speeding up your learning algorithm.
 
 ![]({{site.baseurl}}/images/rmsprop_1.PNG)
+
+## 3.Adam
 
 ----
 ## Reference
