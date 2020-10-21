@@ -3,8 +3,8 @@ published: true
 ---
 Introduce an optimization algorithm that are much faster than gradient descent.
 
-## 1.Definition
-
+## 1.Intuition
+$$v_{t}=\beta v_{t-1} + (1-\beta)\theta_{t}$$
 
 ![]({{site.baseurl}}/images/minibatch_1.PNG)
 
