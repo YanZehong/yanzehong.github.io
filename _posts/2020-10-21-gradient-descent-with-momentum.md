@@ -10,12 +10,12 @@ After applying momentum, the oscillations in the vertical direction will tend to
 
 ## 2.Implementation
 On iteration t:  
-  Compute $$dW, db$$ on the current mini-batch
-  $$v_{dW}=\beta v_{dW} + (1-\beta)dW$$
-  $$v_{db}=\beta v_{db} + (1-\beta)db$$
-  $$W = W - \alpha v_{dW}, b = b - \alpha v_{db}$$
+  Compute $$dW, db$$ on the current mini-batch  
+  $$v_{dW}=\beta v_{dW} + (1-\beta)dW$$  
+  $$v_{db}=\beta v_{db} + (1-\beta)db$$  
+  $$W = W - \alpha v_{dW}, b = b - \alpha v_{db}$$  
   
-Hyperparameters:$$\alpha, \beta$$
+Hyperparameters:$$\alpha, \beta$$. Generally, $$\beta=0.9$$, meaning average over last about 10 gradients.
 
 ----
 ## Reference
