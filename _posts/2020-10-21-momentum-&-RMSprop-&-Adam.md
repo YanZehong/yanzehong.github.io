@@ -25,7 +25,7 @@ Similar to momentum, it has the effects of damping out the oscillations in gradi
 
 ![]({{site.baseurl}}/images/rmsprop_1.PNG)
 
-## 3.Adam
+## 3.Adam (Adaptive moment estimation)
 Many optimization algorithms proposed by some well-known researchers showed that they worked weill in a few problems. However, those algorithms subsequently were shown not to generalize that well to the wide range of neural network.  
 Adam optimization algorithm is basically combining momentum with RMSprop. Let's see how it works.
 
@@ -37,9 +37,15 @@ Adam optimization algorithm is basically combining momentum with RMSprop. Let's 
 >> $$s_{dW}=\beta_{2} s_{dW} + (1-\beta_{2})dW^{2}$$  
 >> $$s_{db}=\beta_{2} s_{db} + (1-\beta_{2})db^{2}$$  
 >> Implement bias correction  
->> $$v_{dW}^{corrected} = v_{dW} / (1 - \beta_{1}^{t}), v_{db}^{corrected} = v_{db} / (1 - \beta_{1}^{t})$$  
->> $$s_{dW}^{corrected} = s_{dW} / (1 - \beta_{2}^{t}), s_{db}^{corrected} = s_{db} / (1 - \beta_{2}^{t})$$  
->> $$W = W - \alpha \frac{v_{dW}^{corrected}}{\sqrt{s_{dW}^{corrected}}+\epsilon}, b = b - \alpha \frac{v_{db}^{corrected}}{\sqrt{s_{db}^{corrected}}+\epsilon}$$  
+>> $$v_{dW}^{corrected} = \frac{v_{dW}}{1 - \beta_{1}^{t}}, v_{db}^{corrected} = \frac{v_{db}}{1 - \beta_{1}^{t}}$$  
+>> $$s_{dW}^{corrected} = \frac{s_{dW}}{1 - \beta_{2}^{t}}, s_{db}^{corrected} = \frac{s_{db}}{1 - \beta_{2}^{t}}$$  
+>> $$W = W - \alpha \frac{v_{dW}^{corrected}}{\sqrt{s_{dW}^{corrected}}+\epsilon}, b = b - \alpha \frac{v_{db}^{corrected}}{\sqrt{s_{db}^{corrected}}+\epsilon}$$ 
+
+### 3.1 Hyperparameters choice
+(1)$$\alpha$$ needs to be tune.  
+(2)$$\beta_{1} = 0.9$$  
+(3)$$\beta_{2} = 0.999$$  
+(4)$$\epsilon = 10^{-8}$$  
 
 ----
 ## Reference
