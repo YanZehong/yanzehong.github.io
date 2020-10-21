@@ -10,7 +10,7 @@ After applying momentum, the oscillations in the vertical direction will tend to
 
 ## 2.Implementation
 > Initialization: $$v_{dW}=0, v_{db}=0$$  
-> On iteration t:
+> on iteration t:
 >> Compute $$dW, db$$ on the current mini-batch  
 >> $$v_{dW}=\beta v_{dW} + (1-\beta)dW$$  
 >> $$v_{db}=\beta v_{db} + (1-\beta)db$$  
