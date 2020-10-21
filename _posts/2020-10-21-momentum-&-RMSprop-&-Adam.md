@@ -40,10 +40,10 @@ Adam optimization algorithm is basically combining momentum with RMSprop. Let's 
 >> $$W = W - \alpha \frac{v_{dW}^{corrected}}{\sqrt{s_{dW}^{corrected}}+\epsilon}, b = b - \alpha \frac{v_{db}^{corrected}}{\sqrt{s_{db}^{corrected}}+\epsilon}$$ 
 
 ### 3.1 Hyperparameters choice
-- $$\alpha$$ needs to be tune.  
-- $$\beta_{1} = 0.9$$  
-- $$\beta_{2} = 0.999$$  
-- $$\epsilon = 10^{-8}$$  
+(1) $$\alpha$$ needs to be tune.  
+(2) $$\beta_{1} = 0.9$$  
+(3) $$\beta_{2} = 0.999$$  
+(4) $$\epsilon = 10^{-8}$$  
 
 ----
 ## Reference
