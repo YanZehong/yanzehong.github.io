@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-A method that might help speed up your learning algorithm, is to slowly reduce the learning rate over time. Plus, we will talk about local optima and saddle points in neural networks.
+A method that might help speed up your learning algorithm is to slowly reduce learning rate over time. Plus, we will talk about local optima and saddle points in neural networks.
 
 ## 1.Why?
 - Suppose we're implementing mini-batch gradient descent, with a reasonably small mini-batch, maybe 64 examples in a mini-batch. Then as we iterate, steps will be a littile bit noisy. It will tend towards the minimum, but it won't exactly converge (shown as blue line). It just wandering around because the value of $$\alpha$$ is fixed.  
