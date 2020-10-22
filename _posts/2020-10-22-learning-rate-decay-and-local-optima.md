@@ -29,6 +29,7 @@ $$\alpha = \frac{k}{\sqrt{t}} \cdot \alpha_{0}$$
 where k is a constant, t is a hyperparameter over the mini-batch number.
 
 (3) decrease staircase
+
 ![]({{site.baseurl}}/images/lr_decay_2.PNG)
 
 (4) manual decay - works only for a small number of models.  
