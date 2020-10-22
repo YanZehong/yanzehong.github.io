@@ -23,6 +23,7 @@ $$\alpha = 0.95^{epoch-num} \cdot \alpha_{0}$$
 (2)
 
 $$\alpha = \frac{k}{\sqrt{epoch-num}} \cdot \alpha_{0}$$  
+
 $$\alpha = \frac{k}{\sqrt{t}} \cdot \alpha_{0}$$
 
 where k is a constant, t is a hyperparameter over the mini-batch number.
