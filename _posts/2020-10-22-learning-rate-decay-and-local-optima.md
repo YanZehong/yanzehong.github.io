@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-A method that might help speed up your learning algorithm, is to slowly reduce the learning rate over time. Plus, we will talk some local optima and saddle points in neural networks. So you can have better intuition about the types of optimization problems.
+A method that might help speed up your learning algorithm, is to slowly reduce the learning rate over time. Plus, we will talk about local optima and saddle points in neural networks.
 
 ## 1.Why?
 - Suppose we're implementing mini-batch gradient descent, with a reasonably small mini-batch, maybe 64 examples in a mini-batch. Then as we iterate, steps will be a littile bit noisy. It will tend towards the minimum, but it won't exactly converge (shown as blue line). It just wandering around because the value of $$\alpha$$ is fixed.  
@@ -22,7 +22,8 @@ $$\alpha = 0.95^{epoch-num} \cdot \alpha_{0}$$
 
 (2)
 
-$$\alpha = \frac{k}{\sqrt{epoch-num}} \cdot \alpha_{0}$$ or $$\alpha = \frac{k}{\sqrt{t}} \cdot \alpha_{0}$$
+$$\alpha = \frac{k}{\sqrt{epoch-num}} \cdot \alpha_{0}$$  
+$$\alpha = \frac{k}{\sqrt{t}} \cdot \alpha_{0}$$
 
 where k is a constant, t is a hyperparameter over the mini-batch number.
 
@@ -32,6 +33,7 @@ where k is a constant, t is a hyperparameter over the mini-batch number.
 (4) manual decay - works only for a small number of models.  
 
 ## 4.Local optima problems
+I hope this section can help u have a little better intuition about the types of optimization problems.
 
 ----
 ## Reference
