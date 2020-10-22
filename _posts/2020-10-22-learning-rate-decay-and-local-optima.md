@@ -34,7 +34,21 @@ where k is a constant, t is a hyperparameter over the mini-batch number.
 (4) manual decay - works only for a small number of models.  
 
 ## 4.Local optima problems
-I hope this section can help u have a little better intuition about the types of optimization problems.
+### 4.1 Introduction
+I hope this section can help u have a little better intuition about the types of optimization problems.  
+It turns out when we create a neural network, most points of zero gradient are not local optima like points shown on the left. Instead, most points of zero gradient in a cost function are saddle points shown as the right side here.  
+Informally, a function of very high dimensional space, say, a 20,000 dimensional space, if the gradient is zero, then in each direction it can either be a convex function or a concave function. Therefore, you are much more likely to get some directions where the curve bends up as well as some directions with the curve bending down, called a saddle point.
+
+![]({{site.baseurl}}/images/lr_decay_3.PNG)
+
+### 4.2 Real problem: plateaus
+Plateau is a region where derivative is close to zero for a long time.
+
+![]({{site.baseurl}}/images/lr_decay_4.PNG)
+
+lessons:
+- Unlikely to get stuck in a bad local optima
+- Plateaus can make learning slow. And this is where learning algorithms, like momentum or RMSprop or Adam can really help you.
 
 ----
 ## Reference
