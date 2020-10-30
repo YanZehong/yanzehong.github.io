@@ -23,10 +23,22 @@ However, if u were to sample at random, then u will have tried out 25 distinct v
 
 ![]({{site.baseurl}}/images/hyperpara_1.PNG)
 
-### 2.2 Coarse to fine
-Maybe you found that the red point work the best and some points around it tended to work really well. Then, you can zoom in to a smaller region of the hyperparameters and sample more densely within this area. Such type of a coarse to fine search is frequently used.  
+### 2.2 Coarse to fine search
+Maybe you found that the red point work the best and some points around it tended to work really well. Then, you can zoom in to a smaller region of the hyperparameters and sample more densely within this area. Such type of a coarse to fine search is frequently used.
 
 ![]({{site.baseurl}}/images/hyperpara_2.PNG)
+
+## 3.An approriate scale to pick hyperparameters
+Let's look at the following example. It seems more seasonable to search for hyperparameters on a log scale instead of using a linear scale.
+
+![]({{site.baseurl}}/images/hyperpara_3.PNG)
+
+## 4.Practice
+- Babysitting one model.(a huge data set but not a lot of computational resources)  
+
+- Training many models in parallel  
+
+![]({{site.baseurl}}/images/hyperpara_4.PNG)
 
 ----
 ## Reference
