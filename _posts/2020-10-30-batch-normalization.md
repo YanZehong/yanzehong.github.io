@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-Batch normalization makes your hyperparameter search much easier, makes your neural network much more robust, and also enable you to much more easily train even very deep networks.
+BN makes your hyperparameter search much easier, makes your neural network much more robust, and also enable you to much more easily train even very deep networks.
 
 ## 1.Normalizing inputs to sepeed up learning
 There are some debates about whether or not we should normalize the value before the activation funciton, $$z^{[l]}$$, or normalize the value after applying activation function, $$a^{[l]}$$. Actually, normalizing $$z^{[l]}$$ is done much more often.
