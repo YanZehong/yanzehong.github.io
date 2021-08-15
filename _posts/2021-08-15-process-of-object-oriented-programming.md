@@ -1,22 +1,33 @@
 ---
 published: true
 ---
-## A New Post
+A good starting point for many programming problems when you are using Python, specifically with object-oriented programming (OOP).
 
-Some tips for how to systematically organize your hyperparameter tuning process.
+## 1.Process (It is "top down")
+- Write or draw about the problem.  
+- Extract key concepts and research them.  
+- Create a class hierarchy and object map for the concepts.  
+- Code the classes and a test to run them.  
+- Repeat and refine.  
 
-## 1.Hyperparameters
-- 1st (most important)  
-(1) learning rate $$\alpha$$  
-- 2nd  
-(2) momentum $$\beta=0.9$$  
-(3) the number of hidden units  
-(4) mini-batch size  
-- 3rd  
-(5) the number of layers  
-(6) learning rate decay  
-- 4th  
-(7) adam optimization $$\beta_{1}=0.9, \beta_{2}=0.999, \epsilon=10^{-8}$$  
+It starts from the very abstract loose idea and then slowly refines it until the idea is solid and something you are able to code. 
+
+### Example
+A game description from [1]:  
+”Aliens have invaded a space ship and our hero has to go through a maze of rooms defeating them so he can escape into an escape pod to the planet below. The game will be more like a Zork or Adventure type game with text outputs and funny ways to die. The game will involve an engine that runs a map full of rooms or scenes. Each room will print its own description when the player enters it and then tell the engine what room to run next out of the map.”  
+
+* Map  
+  next_scene  
+  opening_scene  
+* Engine
+  play  
+* Scene  
+  enter  
+  * Death  
+  * Central Corridor  
+  * Laser Weapon Armory  
+  * The Bridge  
+  * Escape Pod  
 
 ## 2.Tuning
 ### 2.1 Try random values: Don't use a grid
@@ -44,5 +55,4 @@ Let's look at the following example. It seems more seasonable to search for hype
 
 ----
 ## Reference
-Andrew Y Ng. (n.d.). _Deep Learning Specialization_ [Video]. Coursera.  
-<https://www.coursera.org/specializations/deep-learning/>
+[1] Zed A. Shaw (2017). _Learn Python3 the Hard Way_ (3nd ed.). Boston:Addison-Wesley.
