@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## A New Post
 
@@ -46,4 +46,3 @@ Let's look at the following example. It seems more seasonable to search for hype
 ## Reference
 Andrew Y Ng. (n.d.). _Deep Learning Specialization_ [Video]. Coursera.  
 <https://www.coursera.org/specializations/deep-learning/>
-
