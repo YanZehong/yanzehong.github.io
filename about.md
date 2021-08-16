@@ -6,8 +6,12 @@ permalink: /about/
 
 #### 09/2016 – 06/2020, School of Electrical Engineering, Harbin Institute of Technology (HIT), China  
   B.E. in Communications Engineering  
+#### 07/2017 – 08/2017, University of San Diego (UCSD), U.S.  
+  Summer Exchange Student  
+#### 07/2019 – 08/2019, CSAIL, Massachusetts Institute of Technology (MIT), U.S.  
+  Research Assistant  
 #### 08/2021 - now, School of Computing, National University of Singapore (NUS), Singapore  
-  Master of Computing. 
+  Master of Computing  
   
 
 ![]({{site.baseurl}}/images/about-1.png)
