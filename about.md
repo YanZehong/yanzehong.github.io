@@ -15,7 +15,7 @@ permalink: /about/
   
 
 
-{: .center-image}![]({{site.baseurl}}/images/about-1.png)
+![]({{site.baseurl}}{: .center-image}/images/about-1.png)
   
 ----
 _Learning without thought is labor lost; thought without learning is perilous._  \- Confucius
