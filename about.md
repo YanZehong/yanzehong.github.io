@@ -15,4 +15,4 @@ _Learning without thought is labor lost; thought without learning is perilous._
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:yanzehong1101@outlook.com)
