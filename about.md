@@ -9,13 +9,14 @@ permalink: /about/
 #### 08/2021 - now, School of Computing, National University of Singapore (NUS), Singapore  
   Master of Computing. 
   
-  
+
+![]({{site.baseurl}}/images/about-1.png)
   
 ----
-_Learning without thought is labor lost; thought without learning is perilous._  \- Confucius
+**_Learning without thought is labor lost; thought without learning is perilous._**  \- Confucius
 
 ----
-  
+
 
   
   
