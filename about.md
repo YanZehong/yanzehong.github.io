@@ -8,7 +8,8 @@ Some information about you!
 
 ### More Information
 
-_Learning without thought is labor lost; thought without learning is perilous._  *"* Confucius (Analects)
+_Learning without thought is labor lost; thought without learning is perilous._  
+- Confucius (Analects)
 
 ### Contact me
 
