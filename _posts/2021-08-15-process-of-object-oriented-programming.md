@@ -3,7 +3,7 @@ published: true
 ---
 A good starting point for many programming problems when you are using Python, specifically with object-oriented programming (OOP).
 
-## 1.Process ('Top Down')
+## 1. Process ('Top Down')
 - Write or draw about the problem.  
 - Extract key concepts and research them.  
 - Create a class hierarchy and object map for the concepts.  
@@ -38,7 +38,7 @@ Once we have this tree of classes and some of the functions we can try to write 
 The last step in the process isn't much a step as it is a while-loop. We don’t ever do this as a one-pass operation. Instead we go back over the whole process again and refine it based on information we’ve learned from later steps. Sometimes I’ll get to step 3 and realize that I need to work on 1 and 2 more, so I’ll stop and go back and work on those. Sometimes I’ll get a flash of inspiration and jump to the end to code up the solution in my head while I have it there, but then I’ll go back and do the previous steps to make sure I cover all the possibilities I have.
 
 
-## 2.'Bottom Up'
+## 2. 'Bottom Up'
 Of course, there's another way to sovle problem that starts with code and goes ”up” to the abstract concepts. Here are the general steps you follow to do this:  
 - Take a small piece of the problem; hack on some code and get it to run barely.  
 - Refine the code into something more formal with classes and automated tests.  
