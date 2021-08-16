@@ -14,8 +14,8 @@ permalink: /about/
   \- Master of Computing  
   
 
-
-![]({{site.baseurl}}{: .center-image}/images/about-1.png)
+{: .center-image}
+![]({{site.baseurl}}/images/about-1.png)
   
 ----
 _Learning without thought is labor lost; thought without learning is perilous._  \- Confucius
