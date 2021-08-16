@@ -8,7 +8,7 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+_Learning without thought is labor lost; thought without learning is perilous._  *"* Confucius (Analects)
 
 ### Contact me
 
