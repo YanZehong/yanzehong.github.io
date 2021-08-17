@@ -28,7 +28,7 @@ Some personal tips about how to make a nice function:
 - When you write doc comments for your functions, make the comments documentation for someone who will have to use your code.  
 - While comments are good, too many are bad, and you have to maintain them. Keep your comments relatively short and to the point.  
 
-# 
+<br/><br/>
 
 ----
 _When in the light, can’t see anything in the darkness._  
