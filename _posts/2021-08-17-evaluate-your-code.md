@@ -26,7 +26,7 @@ Some personal tips about how to make a nice function:
 - Some programmers will tell u that your code should be readable enough that you do not need comments. Ignore them and write comments.  
 - When you write comments, describe why you are doing what you are doing. The code already says how, but why you did things the way you did is more important.  
 - When you write doc comments for your functions, make the comments documentation for someone who will have to use your code.  
-- While comments are good, too many are bad, and you have to maintain them. Keep your comments relatively short and to the point.
+- While comments are good, too many are bad, and you have to maintain them. Keep your comments relatively short and to the point.  
 
 ![]({{site.baseurl}}/images/about-5.PNG)
 
