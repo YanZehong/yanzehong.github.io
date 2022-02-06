@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Some suggestions to start learning to feed yourself and evaluate your solutions rather than just copy solutions out of textbooks. 
 
