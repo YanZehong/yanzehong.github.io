@@ -32,4 +32,4 @@ _When in the darkness, can see everything in the light._  \- Guan Yin Zi
 
 ----
 ## Reference
-Zed A. Shaw (2017). _Learn Python3 the Hard Way_ (3nd ed.). Boston:Addison-Wesley.
+Stanford CS224N (2021).
