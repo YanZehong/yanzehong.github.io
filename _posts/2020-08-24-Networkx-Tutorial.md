@@ -8,6 +8,7 @@ NetworkX is a Python package for the creation, manipulation, and study of the st
 - Source: [GitHub](http://github.com/networkx/networkx)
 
 This guide can help you start working with NetworkX.
+<!--more-->
 
 ## Creating a graph
 Create an empty graph with no nodes and no edges.
