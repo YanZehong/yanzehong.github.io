@@ -4,6 +4,7 @@ title: Word2vec
 published: true
 ---
 
+
 <div class="img-div-any-width" markdown="0">
   <image src="/images/NLP/word2vec.png"/>
   <br />
@@ -18,6 +19,7 @@ published: true
 
 
 In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
+
 <!--more-->
 
 
