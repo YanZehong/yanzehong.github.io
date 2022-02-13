@@ -2,6 +2,7 @@
 published: true
 ---
 A powerful regularization technique. Let's see how it works in this post.
+<!--more-->
 
 ## 1.How?
 - Set some probability of eliminating nodes in each of the layers of neural network.
