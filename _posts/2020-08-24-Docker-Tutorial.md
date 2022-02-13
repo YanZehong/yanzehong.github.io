@@ -8,6 +8,7 @@ Docker is a platform for developers and sysadmins to build, run and share applic
 [Get Started with Docker](https://docker.com/get-started).
 
 This page contains step-by-step instructions on how to get started with Docker.
+<!--more-->
 
 ## Docker overview
 Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allow you to run many containers simultaneously on a give host.
