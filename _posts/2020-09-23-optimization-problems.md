@@ -2,6 +2,7 @@
 published: true
 ---
 Ways to speed up the training of neural networks.
+<!--more-->
 
 ## 1.Normalizating inputs
 
