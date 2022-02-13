@@ -15,7 +15,7 @@ It starts from the very abstract loose idea and then slowly refines it until the
 
 ### Example
 A game description from [1]:  
-”Aliens have invaded a space ship and our hero has to go through a maze of rooms defeating them so he can escape into an escape pod to the planet below. The game will be more like a Zork or Adventure type game with text outputs and funny ways to die. The game will involve an engine that runs a map full of rooms or scenes. Each room will print its own description when the player enters it and then tell the engine what room to run next out of the map.”  
+'Aliens have invaded a space ship and our hero has to go through a maze of rooms defeating them so he can escape into an escape pod to the planet below. The game will be more like a Zork or Adventure type game with text outputs and funny ways to die. The game will involve an engine that runs a map full of rooms or scenes. Each room will print its own description when the player enters it and then tell the engine what room to run next out of the map.'
 
 First we need to make a list of all the nouns and research  each of these concepts and anything we don't know right now. Then, we can turn it into a class hierarchy by asking "What is similar to other things?" and "What is basically just another word for another thing?". Type it down in text editor:
 
