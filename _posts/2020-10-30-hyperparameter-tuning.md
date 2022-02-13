@@ -2,6 +2,7 @@
 published: true
 ---
 Some tips for how to systematically organize your hyperparameter tuning process.
+<!--more-->
 
 ## 1.Hyperparameters
 - 1st (most important)  
