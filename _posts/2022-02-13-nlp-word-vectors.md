@@ -2,7 +2,6 @@
 layout: post
 title: Word2vec
 published: true
-excerpt_separator: <!--more-->
 ---
 
 <div class="img-div-any-width" markdown="0">
@@ -16,7 +15,6 @@ excerpt_separator: <!--more-->
 </blockquote>
 
 In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
-
 <!-- more -->
 
 ## REGISTRIES
@@ -37,4 +35,3 @@ I hope that you have a better sense for these concepts. As always, all feedback 
 If you found this work helpful for your research, please cite it as following:
 
 Yan, Z. (2022). Word2vec [Blog post]. Retrieved from https://yanzehong.github.io/
-
