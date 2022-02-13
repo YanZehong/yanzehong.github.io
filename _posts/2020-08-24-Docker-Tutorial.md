@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker Tutorial
+title: Docker
 published: true
 ---
 Docker is a platform for developers and sysadmins to build, run and share applicantions with containers.
