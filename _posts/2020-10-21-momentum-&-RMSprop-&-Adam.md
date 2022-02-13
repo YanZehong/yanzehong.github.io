@@ -2,6 +2,7 @@
 published: true
 ---
 Three optimization algorithms work almost always faster than the standard gradient descent algorithm.
+<!--more-->
 
 ## 1.Description (gradient descent with momentum)
 After applying momentum, the oscillations in the vertical direction will tend to average out to something closer to zero. Whereas, on the horizontal direction, the average will still be pretty big. You can find it ends up with a few iteration, much smaller oscillations in the vertical direction, but are more directed to move toward the minimum in horizontal direction.
