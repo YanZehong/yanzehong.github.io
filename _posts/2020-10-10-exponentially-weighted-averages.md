@@ -2,6 +2,7 @@
 published: true
 ---
 Introduce an optimization algorithm that are much faster than gradient descent.
+<!--more-->
 
 ## 1.Intuition
 
