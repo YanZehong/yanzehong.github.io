@@ -4,6 +4,8 @@ title: Word2vec
 published: true
 ---
 
+In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
+
 <div class="img-div-any-width" markdown="0">
   <image src="/images/NLP/word2vec.png"/>
   <br />
@@ -18,7 +20,7 @@ In this post, we'll go over the concept of embedding, and the mechanics of gener
 
 <!-- more -->
 
-### REGISTRIES
+## REGISTRIES
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub. You can also run your own private registry.
 
 ## Conclusion
@@ -33,15 +35,13 @@ I hope that you have a better sense for these concepts. As always, all feedback 
 
 
 ## Citation
-<!-- <div style="color: #777;"> -->
-
+<div style="color: #777;">
 If you found this work helpful for your research, please cite it as following:
-<!-- </div> -->
+</div>
 
-<!-- <div class="cite" markdown="1"> -->
-
+<div class="cite" markdown="1">
 ```code
 Yan, Z. (2022). Word2vec [Blog post]. Retrieved from https://yanzehong.github.io/
 ```
-<!-- </div> -->
+</div>
 
