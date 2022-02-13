@@ -4,7 +4,7 @@ title: Word2vec
 published: true
 ---
 
-
+<div>
 <div class="img-div-any-width" markdown="0">
   <image src="/images/NLP/word2vec.png"/>
   <br />
@@ -16,16 +16,16 @@ published: true
   bush or the pattern of its leaves. <br /><br />
 </blockquote>
 
-<p>
+
 In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
-</p>
-<more></more>
+</div>
+<!-- <more> -->
 
 
 ### REGISTRIES
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub. You can also run your own private registry.
 
-# Conclusion
+## Conclusion
 
 <blockquote class="subtle">
 “If it falls outside your yardsticks, then you are engaged with intelligence, not with automation”  ~God Emperor of Dune
@@ -33,20 +33,19 @@ A Docker registry stores Docker images. Docker Hub is a public registry that any
 
 I hope that you have a better sense for these concepts. As always, all feedback is appreciated <a href="mailto:yanzehong1101@outllook.com">@Ryan</a>.
 
-<h2>References</h2>
-<references>
-</references>
+## References
 
-<h2>Citation</h2>
-<div style="color: #777;">
+
+## Citation
+<!-- <div style="color: #777;"> -->
 
 If you found this work helpful for your research, please cite it as following:
+<!-- </div> -->
 
-<div class="cite" markdown="1">
+<!-- <div class="cite" markdown="1"> -->
 
 ```code
 Yan, Z. (2022). Natural language processing [Blog post]. Retrieved from https://yanzehong.github.io/nlp/
 ```
-</div>
-</div>
+<!-- </div> -->
 
