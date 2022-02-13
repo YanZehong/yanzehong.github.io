@@ -2,6 +2,7 @@
 published: true
 ---
 A good starting point for many programming problems when you are using Python, specifically with object-oriented programming (OOP).
+<!--more-->
 
 ## 1. Process ('Top Down')
 - Write or draw about the problem.  
