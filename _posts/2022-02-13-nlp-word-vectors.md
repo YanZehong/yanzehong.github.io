@@ -19,8 +19,8 @@ published: true
 
 In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
 </div>
-<!-- <more> -->
 
+<!-- more -->
 
 ### REGISTRIES
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub. You can also run your own private registry.
