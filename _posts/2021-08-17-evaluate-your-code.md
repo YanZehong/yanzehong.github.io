@@ -2,6 +2,7 @@
 published: true
 ---
 Some suggestions to start learning to feed yourself and evaluate your solutions rather than just copy solutions out of textbooks. 
+<!--more-->
 
 ## 1. Function Style
 Some personal tips about how to make a nice function:
