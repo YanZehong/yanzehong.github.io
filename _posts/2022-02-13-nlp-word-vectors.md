@@ -17,7 +17,8 @@ published: true
 </blockquote>
 
 
-Docker is a platform for developers and sysadmins to build, run and share applicantions with containers.
+In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
+<!--more-->
 
 
 ### REGISTRIES
