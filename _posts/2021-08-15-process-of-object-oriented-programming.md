@@ -34,7 +34,7 @@ First we need to make a list of all the nouns and research  each of these concep
 
 Once we have this tree of classes and some of the functions we can try to write the code of it.  
 
-![]({{site.baseurl}}/images/process_1.PNG)
+![]({{site.baseurl}}/images/process_1.png)
 
 The last step in the process isn't much a step as it is a while-loop. We don’t ever do this as a one-pass operation. Instead we go back over the whole process again and refine it based on information we’ve learned from later steps. Sometimes I’ll get to step 3 and realize that I need to work on 1 and 2 more, so I’ll stop and go back and work on those. Sometimes I’ll get a flash of inspiration and jump to the end to code up the solution in my head while I have it there, but then I’ll go back and do the previous steps to make sure I cover all the possibilities I have.
 
