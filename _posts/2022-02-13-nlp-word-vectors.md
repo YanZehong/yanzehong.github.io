@@ -10,8 +10,7 @@ published: true
 </div>
 
 <blockquote class='subtle'>
-  “<strong>There is in all things a pattern that is part of our universe. It has symmetry, elegance, and grace</strong> - those qualities you find always in that which the true artist captures. You can find it in the turning of the seasons, in the way sand trails along a ridge, in the branch clusters of the creosote
-  bush or the pattern of its leaves. <br /><br />
+  “<strong>There is in all things a pattern that is part of our universe. It has symmetry, elegance, and grace</strong> ~ Dune (1965)
 </blockquote>
 
 In this post, we'll go over the concept of word vector/embedding, and the mechanics of generating embeddings with word2vec. In addition, both word senses and neural network classfiers are covered in this post.
@@ -31,7 +30,9 @@ where $v_{\omega}$ is a word vector when $\omega$ is a center word and $u_{\omeg
 
 ## Optimization
 - We have a cost function $J(\theta)$ we want to minimize
+
 $$J(\theta) = - \frac{1}{T} \prod_{t=1}^{T} \prod_{-m\leq j \leq m, j\neq 0}^{T} logP(\omega_{t+j}|\omega_{t};\theta)$$
+
 - **Gradient Descent** is an algorithm to minimize $J(\theta)$ by changing $\theta$
 - Idea: from current value of $\theta$, calculate gradient of $J(\theta)$, then take small step in the direction of negative gradient. Repeat.
 
