@@ -19,7 +19,7 @@ In this post, we'll go over the concept of word vector/embedding, and the mechan
 
 ## Main idea of word2vec
 - Start with random word vectors
-- iterate through each word in the whole corpus
+- Iterate through each word in the whole corpus
 - Try to predict surrounding words using word vectors:
 
 $$P(o|c) = \frac{\exp(u_{o}^{T}v_{c})}{\sum_{\omega}\exp(u_{\omega\in V}^{T}v_{c})}$$
@@ -29,7 +29,11 @@ where $v_{\omega}$ is a word vector when $\omega$ is a center word and $u_{\omeg
 - Learning: update vectors so they can predict actual surrounding words better
 - Doing no more than this, this algorithm learns word vectors that capture well word similarity and meaningful directions in a wordspace!
 
-## Conclusion
+## Optimization
+- We have a cost function $J(\theta)$ we want to minimize
+$$J(\theta) = - \frac{1}{T} \prod_{t=1}^{T} \prod_{-m\leq j \leq m, j\neq 0}^{T} logP(\omega_{t+j}|\omega_{t};\theta)$$
+- **Gradient Descent** is an algorithm to minimize $J(\theta)$ by changing $\theta$
+- Idea: from current value of $\theta$, calculate gradient of $J(\theta)$, then take small step in the direction of negative gradient. Repeat.
 
 <blockquote class="subtle">
 “If it falls outside your yardsticks, then you are engaged with intelligence, not with automation”  ~God Emperor of Dune
