@@ -20,8 +20,12 @@ In this post, we'll go over the concept of word vector/embedding, and the mechan
 ## Main idea of word2vec
 - Start with random word vectors
 - iterate through each word in the whole corpus
-- Try to predict surrounding words using word vectors:  
-$$P(o|c) = \frac{\exp(u_{o}^{T}v_{c})}{\sum_{\omega}\exp(u_{\omega\inV}^{T}v_{c})}$$
+- Try to predict surrounding words using word vectors:
+
+$$P(o|c) = \frac{\exp(u_{o}^{T}v_{c})}{\sum_{\omega}\exp(u_{\omega\in V}^{T}v_{c})}$$
+
+where $v_{\omega}$ is a word vector when $\omega$ is a center word and $u_{\omega}$ is a word vector when $\omega$ is a context word.
+
 - Learning: update vectors so they can predict actual surrounding words better
 - Doing no more than this, this algorithm learns word vectors that capture well word similarity and meaningful directions in a wordspace!
 
