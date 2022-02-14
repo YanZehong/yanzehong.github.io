@@ -14,11 +14,16 @@ published: true
   bush or the pattern of its leaves. <br /><br />
 </blockquote>
 
-In this post, we'll go over the concept of embedding, and the mechanics of generating embeddings with word2vec. But let's start with an example to get familiar with using vectors to represent things. Did you know that a list of five numbers (a vector) can represent so much about your personality?
+In this post, we'll go over the concept of word vector/embedding, and the mechanics of generating embeddings with word2vec. In addition, both word senses and neural network classfiers are covered in this post.
 <!--more-->
 
-## REGISTRIES
-A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub. You can also run your own private registry.
+## Main idea of word2vec
+- Start with random word vectors
+- iterate through each word in the whole corpus
+- Try to predict surrounding words using word vectors:  
+$$P(o|c) = \frac{\exp(u_{o}^{T}v_{c})}{\sum_{\omega}\exp(u_{\omega\inV}^{T}v_{c})}$$
+- Learning: update vectors so they can predict actual surrounding words better
+- Doing no more than this, this algorithm learns word vectors that capture well word similarity and meaningful directions in a wordspace!
 
 ## Conclusion
 
