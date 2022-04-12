@@ -47,5 +47,6 @@ I hope that you have a better sense for these concepts. As always, all feedback 
 
 ## Citation
 If you found this work helpful for your research, please cite it as following:
-
+```
 Yan, Z. (2022). Word2vec [Blog post]. Retrieved from https://yanzehong.github.io/
+```
