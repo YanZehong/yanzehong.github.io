@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 A good starting point for many programming problems when you are using Python, specifically with object-oriented programming (OOP).
 <!--more-->
