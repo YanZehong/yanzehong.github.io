@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 BN makes your hyperparameter search much easier, makes your neural network much more robust, and also enable you to much more easily train even very deep networks.
 <!--more-->
