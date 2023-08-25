@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 Practical aspects of deep learning.In addition, we will illustrate why regularization reduces overfitting.
 <!--more-->
