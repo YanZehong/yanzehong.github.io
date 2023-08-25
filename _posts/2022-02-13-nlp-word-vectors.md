@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Word2vec
-published: true
+published: false
 ---
 
 <div class="img-div-any-width" markdown="0">
