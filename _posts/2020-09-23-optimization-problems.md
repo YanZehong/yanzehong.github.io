@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 Ways to speed up the training of neural networks.
 <!--more-->
