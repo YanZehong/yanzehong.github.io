@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 A method that might help speed up your learning algorithm is to slowly reduce learning rate over time. Plus, we will talk about local optima and saddle points in neural networks.
 <!--more-->
