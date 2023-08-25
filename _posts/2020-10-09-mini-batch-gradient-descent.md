@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 An optimization algorithm that will enable you to train neural network much faster in the regime of big data.
 <!--more-->
