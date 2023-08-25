@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 Some tips for how to systematically organize your hyperparameter tuning process.
 <!--more-->
