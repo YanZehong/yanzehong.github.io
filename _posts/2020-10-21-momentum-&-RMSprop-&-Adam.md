@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 Three optimization algorithms work almost always faster than the standard gradient descent algorithm.
 <!--more-->
