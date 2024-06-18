@@ -10,8 +10,10 @@ permalink: /about/
 \- Summer Exchange Student  
 #### 07/2019 – 08/2019, CSAIL, Massachusetts Institute of Technology (MIT), U.S.  
 \- Research Assistant  
-#### 08/2021 - present, School of Computing, National University of Singapore (NUS), Singapore  
+#### 08/2021 - 01/2023, School of Computing, National University of Singapore (NUS), Singapore  
 \- Master of Computing  
+#### 08/2023 - present, School of Computing, National University of Singapore (NUS), Singapore  
+\- PhD student in Department of Computer Science
   
 
 {: .center-image}
@@ -27,4 +29,4 @@ _Learning without thought is labor lost; thought without learning is perilous._ 
   
 ### Contact me
 
-[yanzehong1101@outlook.com](mailto:yanzehong1101@outlook.com)
+[email](mailto:e0787894@u.nus.edu)
