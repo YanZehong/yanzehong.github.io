@@ -29,4 +29,4 @@ _Learning without thought is labor lost; thought without learning is perilous._ 
   
 ### Contact me
 
-[email](mailto:e0787894@u.nus.edu)
+[Email](mailto:e0787894@u.nus.edu) / [Scholar](https://scholar.google.com/citations?user=GkUGt0cAAAAJ&hl=en&inst=3212728378801010220&oi=ao) / [Github](https://github.com/YanZehong)
