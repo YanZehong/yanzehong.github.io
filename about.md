@@ -20,7 +20,7 @@ permalink: /about/
 ![]({{site.baseurl}}/images/about-2.png)
   
 ----
-_Learning without thought is labor lost; thought without learning is perilous._  \- Confucius
+_Learning without thought is labor lost; thought without learning is perilous._ 
 
 ----
 
