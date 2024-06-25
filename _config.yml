@@ -9,7 +9,7 @@ name: Zehong Yan
 description: Open for collaboration on interesting topics! :)
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/YanZehong/yanzehong.github.io/blob/master/images/me.jpg
+avatar: ![](/images/me.jpg)
 
 #
 # Flags below are optional
