@@ -6,7 +6,6 @@ published: true
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/Sniffer/introcase.jpg"/>
-  <br />
 </div>
 
 <blockquote class='subtle'>
