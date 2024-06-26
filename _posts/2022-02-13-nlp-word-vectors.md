@@ -1,52 +1,50 @@
 ---
 layout: post
-title: Word2vec
-published: false
+title: SNIFFER: Multimodal Large Language Model for Explainable Out-of-Context Misinformation Detection
+published: true
 ---
 
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/NLP/word2vec.png"/>
+  <image src="/images/Sniffer/introcase.jpg"/>
   <br />
 </div>
 
 <blockquote class='subtle'>
-  “<strong>There is in all things a pattern that is part of our universe. It has symmetry, elegance, and grace</strong> ~ Dune (1965)
+  <strong>Peng Qi, Zehong Yan, Wynne Hsu, Mong Li Lee</strong>
+  CVPR, 2024
 </blockquote>
 
-In this post, we'll go over the concept of word vector/embedding, and the mechanics of generating embeddings with word2vec. In addition, both word senses and neural network classfiers are covered in this post.
+Focusing on the innovative research perspective of explainable out-of-context misinformation detection, this paper proposes a new multimodal large language model, SNIFFER, designed to offer both accurate detection and persuasive explanations simultaneously. Enhanced by two-stage instruction tuning and retrieval-enhancement techniques, SNIFFER effectively models both internal image-text inconsistency and external claim-evidence relationships.
 <!--more-->
 
-## Main idea of word2vec
-- Start with random word vectors
-- Iterate through each word in the whole corpus
-- Try to predict surrounding words using word vectors:
+## Abstract
+```
+Misinformation is a prevalent societal issue due to its potential high risks. Out-Of-Context (OOC) misinformation, where authentic images are repurposed with false text, is one of the easiest and most effective ways to mislead audiences. Current methods focus on assessing image-text consistency but lack convincing explanations for their judgments, which is essential for debunking misinformation. While Multimodal Large Language Models (MLLMs) have rich knowledge and innate capability for visual reasoning and explanation generation, they still lack sophistication in understanding and discovering the subtle crossmodal differences. In this paper, we introduce SNIFFER, a novel multimodal large language model specifically engineered for OOC misinformation detection and explanation. SNIFFER employs two-stage instruction tuning on InstructBLIP. The first stage refines the model's concept alignment of generic objects with news-domain entities and the second stage leverages language-only GPT-4 generated OOC-specific instruction data to fine-tune the model's discriminatory powers. Enhanced by external tools and retrieval, SNIFFER not only detects inconsistencies between text and image but also utilizes external knowledge for contextual verification. Our experiments show that SNIFFER surpasses the original MLLM by over 40% and outperforms state-of-the-art methods in detection accuracy. SNIFFER also provides accurate and persuasive explanations as validated by quantitative and human evaluations.
+```
 
-$$P(o|c) = \frac{\exp(u_{o}^{T}v_{c})}{\sum_{\omega}\exp(u_{\omega\in V}^{T}v_{c})}$$
-
-where $v_{\omega}$ is a word vector when $\omega$ is a center word and $u_{\omega}$ is a word vector when $\omega$ is a context word.
-
-- Learning: update vectors so they can predict actual surrounding words better
-- Doing no more than this, this algorithm learns word vectors that capture well word similarity and meaningful directions in a wordspace!
-
-## Optimization
-- We have a cost function $J(\theta)$ we want to minimize
-
-$$J(\theta) = - \frac{1}{T} \prod_{t=1}^{T} \prod_{-m\leq j \leq m, j\neq 0}^{T} logP(\omega_{t+j}|\omega_{t};\theta)$$
-
-- **Gradient Descent** is an algorithm to minimize $J(\theta)$ by changing $\theta$
-- Idea: from current value of $\theta$, calculate gradient of $J(\theta)$, then take small step in the direction of negative gradient. Repeat.
-
-<blockquote class="subtle">
-“If it falls outside your yardsticks, then you are engaged with intelligence, not with automation”  ~God Emperor of Dune
-</blockquote>
-
-I hope that you have a better sense for these concepts. As always, all feedback is appreciated <a href="mailto:yanzehong1101@outllook.com">@Ryan</a>.
-
-## References
-
-
-## Citation
+## BibTeX
 If you found this work helpful for your research, please cite it as following:
 ```
-Yan, Z. (2022). Word2vec [Blog post]. Retrieved from https://yanzehong.github.io/
+@inproceedings{qi2023sniffer,
+  author      = {Qi, Peng and Yan, Zehong and Hsu, Wynne and Lee, Mong Li},
+  title       = {SNIFFER: Multimodal Large Language Model for Explainable Out-of-Context Misinformation Detection},
+  booktitle   = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year        = {2024}
+}
 ```
+
+
+<footer class="footer">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a hred="https://pengqi.site/Sniffer/">Sniffer</a>. Thanks for the great work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
