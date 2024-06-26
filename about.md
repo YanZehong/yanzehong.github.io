@@ -9,11 +9,14 @@ permalink: /about/
 #### 07/2017 – 08/2017, University of San Diego (UCSD), U.S.  
 \- Summer Exchange Student  
 #### 07/2019 – 08/2019, CSAIL, Massachusetts Institute of Technology (MIT), U.S.  
-\- Research Assistant  
+\- Summer Exchange Student  
 #### 08/2021 - 01/2023, School of Computing, National University of Singapore (NUS), Singapore  
 \- Master of Computing  
+#### 02/2023 – 08/2024, NUS Centre for Trusted Internet and Community, National University of Singapore (NUS), Singapore  
+\- Research Assistant 
 #### 08/2023 - present, School of Computing, National University of Singapore (NUS), Singapore  
 \- PhD student in Department of Computer Science
+\- Supervisor: Prof. Mong Li Lee and Prof. Wynne Hsu
   
 
 {: .center-image}
