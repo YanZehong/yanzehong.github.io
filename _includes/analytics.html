@@ -5,7 +5,11 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
+	  gtag('event', 'page_view', {
+		page_title: '{{ page.title | replace: "'", "\\'" }}',
+		page_location: '{{ site.baseurl }}{{ page.url }}',
+		send_to: '{{ site.google_analytics }}'
+	  });
 	  gtag('config', 'G-HZ7XL0FN03');
 	</script>
 {% endif %}
