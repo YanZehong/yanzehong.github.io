@@ -15,7 +15,7 @@ permalink: /about/
 #### 02/2023 – 08/2024, NUS Centre for Trusted Internet and Community, National University of Singapore (NUS), Singapore  
 \- Research Assistant 
 #### 08/2023 - present, School of Computing, National University of Singapore (NUS), Singapore  
-\- PhD student in Department of Computer Science
+\- PhD student in Department of Computer Science  
 \- Supervisor: Prof. Mong Li Lee and Prof. Wynne Hsu
   
 
