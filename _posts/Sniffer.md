@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SNIFFER\: Multimodal Large Language Model for Explainable Out-of-Context Misinformation Detection
+title: SNIFFER Multimodal Large Language Model for Explainable Out-of-Context Misinformation Detection
 published: true
 ---
 
