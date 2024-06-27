@@ -19,7 +19,7 @@ I'm currently a Ph.D. student in the School of Computing at the National Univers
   
 
 # Experience
-#### 02/2023 – 08/2024, NUS Centre for Trusted Internet and Community, National University of Singapore, Singapore  
+#### 02/2023 – 08/2024, NUS Centre for Trusted Internet and Community, Singapore  
 \- Research Assistant  
 #### 08/2020 – 03/2021, Pengcheng Laboratory, Shenzhen, China  
 \- Artificial Intelligence Engineer Intern  
@@ -30,7 +30,7 @@ I'm currently a Ph.D. student in the School of Computing at the National Univers
 
 
 # Awards
-- **Outstanding Graduates**, Harbin Institute of Technology, 2020  
+- **Outstanding Graduate**, Harbin Institute of Technology, 2020  
 - **National Scholarship**, Ministry of Education, China, 2018  
 - **Merit Student**, Harbin Institute of Technology, 2018  
 - **First-level Academic Scholarship**, Harbin Institute of Technology, 2017  
