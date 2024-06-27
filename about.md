@@ -25,7 +25,7 @@ I'm currently a Ph.D. student in the School of Computing at the National Univers
 \- Artificial Intelligence Engineer Intern  
 #### 07/2019 – 08/2019, Massachusetts Institute of Technology, U.S.  
 \- Summer Exchange Student, IEEE International Conference on Universal Village  
-#### 07/2017 – 08/2017, University of San Diego, U.S.  
+#### 07/2017 – 08/2017, University of California San Diego, U.S.  
 \- Summer Exchange Student  
 
 
