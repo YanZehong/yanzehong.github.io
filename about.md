@@ -8,7 +8,7 @@ I'm currently a Ph.D. student in the School of Computing at the National Univers
 
 # Education
 
-#### 09/2016 – 06/2020, School of Electrical Engineering, Harbin Institute of Technology, China  
+#### 09/2016 – 06/2020, School of Electronics and Information Engineering, Harbin Institute of Technology, China  
 \- B.E. in Communication Engineering  
 \- Supervisor: Prof. Ting Ma  
 #### 08/2021 - 01/2023, School of Computing, National University of Singapore, Singapore  
