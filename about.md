@@ -40,7 +40,7 @@ I'm currently a Ph.D. student in the School of Computing at the National Univers
 ![]({{site.baseurl}}/images/about-2.png)
 
 ----
-_Learning without thought is labor lost; thought without learning is perilous._ 
+_Always Motivated._ 
 
 ----
 
