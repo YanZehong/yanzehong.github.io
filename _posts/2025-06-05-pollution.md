@@ -32,7 +32,7 @@ published: true
 
 
 <p align="justify">
-We investigate how  polluted evidence affects the performance of existing OOC detectors, revealing a performance degradation of more than 9 percentage points. We further propose two strategies, cross-modal evidence reranking and cross-modal claim-evidence reasoning, to address the challenges posed by polluted evidence.
+We investigate how  polluted evidence affects the performance of existing OOC detectors, revealing a performance degradation of more than 9 percentage points. We further propose two strategies, <em>cross-modal evidence reranking</em> and <em>cross-modal claim-evidence reasoning</em>, to address the challenges posed by polluted evidence.
 </p>
 <!--more-->
 
@@ -57,7 +57,7 @@ We investigate how  polluted evidence affects the performance of existing OOC de
     
 <p align="justify">
 <ul>
-<li> Existing studies has predominantly examined the GenAI-posed threats at the *claim level*. Recent works on *evidence-level* threats have focused on  textual pollution within fixed, highly structured evidence corpora like Wikipedia pages. However, this narrow focus results in a considerable gap for multimodal misinformation detectors in the real-world  where evidence retrieved from the web are typically unstructured, noisy and polluted. </li>  
+<li> Existing studies has predominantly examined the GenAI-posed threats at the <em>claim level</em>. Recent works on <em>evidence-level</em> threats have focused on  textual pollution within fixed, highly structured evidence corpora like Wikipedia pages. However, this narrow focus results in a considerable gap for multimodal misinformation detectors in the real-world  where evidence retrieved from the web are typically unstructured, noisy and polluted. </li>  
 <li> We construct a large diverse collection of  multimodal evidence to simulate the challenges posed by GenAI-based pollution for OOC misinformation detectors. </li>  
 <li> We propose cross-modal evidence reranking and cross-modal claim-evidence reasoning to significantly enhance the robustness of OOC detectors against evidence pollution. </li>  
 </ul>
