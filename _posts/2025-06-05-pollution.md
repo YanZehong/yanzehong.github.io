@@ -48,10 +48,10 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 ## Introduction
 <p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_1_true.jpeg" width="500" height="250"/>
+  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_1_true.jpeg" width="500" height="200"/>
 </div>
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_2_true.jpeg" width="500" height="250"/>
+  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_2_true.jpeg" width="500" height="200"/>
 </div>
 </p>
     
