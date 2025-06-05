@@ -19,9 +19,11 @@ published: true
   </a> 
 </p>
 
+<p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-4-framework.jpeg" width="310" height="350" />
+  <image src="/images/pollution/Fig-4-framework.jpeg"/>
 </div>
+</p>
 
 
 <blockquote class='subtle'>
@@ -45,10 +47,10 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 
 ## Introduction
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_1_true.jpeg" width="500" height="570"/>
+  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_1_true.jpeg" width="500" height="250"/>
 </div>
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_2_true.jpeg" width="500" height="570"/>
+  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_2_true.jpeg" width="500" height="250"/>
 </div>
     
 <p align="justify">
@@ -60,19 +62,21 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 </p>
 
 ## Evidence Pollution with GenAI
+
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-2-pipeline.png" width="500" height="570"/>
+  <image src="/images/pollution/Fig-2-pipeline.png"/>
 </div>
+</p>
 
 ### Example
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/Fig-3-generation_example_two_col.png" width="500" height="570"/>
+  <image src="/images/pollution/Fig-3-generation_example_two_col.png"/>
 </div>
 
 ## Proposed Strategies
 
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/strategies.png" width="500" height="570"/>
+  <image src="/images/pollution/strategies.png"/>
 </div>
 
 <p align="justify">
@@ -83,17 +87,18 @@ This motivates us to develop two strategies, cross-modal evidence reranking and 
 
 
 ## Dataset 
-
+<p align="center">
 <div class="img-div-any-width" markdown="0">
   <image src="/images/pollution/table_data.png"/>
 </div>
+</p>
 
 ## Performance Study
 
 ### Effect of Evidence Pollution on OOC Detectors
 <p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/table_pollution.png" width="350" height="200"/>
+  <image src="/images/pollution/table_pollution.png"/>
 </div>
 </p>
 
@@ -114,7 +119,7 @@ the VERITE dataset, highlighting the difficulties in reasoning with contradictor
 ### Effect of Proposed Strategies
 <p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/table_strategy.png" width="350" height="200"/>
+  <image src="/images/pollution/table_strategy.png"/>
 </div>
 </p>
 
@@ -141,9 +146,11 @@ Notably, our approaches can be easily integrated into existing OOC detection fra
 
 ## Case Study
 
+<p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/case.png" width="500" height="200"/>
+  <image src="/images/pollution/case.png"/>
 </div>
+</p>
 
 
 ## BibTeX
