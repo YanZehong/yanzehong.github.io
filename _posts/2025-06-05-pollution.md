@@ -20,7 +20,7 @@ published: true
 </p>
 
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/intro.jpeg" width="310" height="350" />
+  <image src="/images/pollution/Fig-4-framework.jpeg" width="310" height="350" />
 </div>
 
 
@@ -44,6 +44,13 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 </p>
 
 ## Introduction
+<div class="img-div-any-width" markdown="0">
+  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_1_true.jpeg" width="500" height="570"/>
+</div>
+<div class="img-div-any-width" markdown="0">
+  <image src="/images/pollution/Fig-1-intro_example_taylor_two_col_2_true.jpeg" width="500" height="570"/>
+</div>
+    
 <p align="justify">
 <ul>
 <li> Existing studies has predominantly examined the GenAI-posed threats at the \textit{claim level}. Recent works on evidence-level threats have focused on  textual pollution within fixed, highly structured evidence corpora like Wikipedia pages. However, this narrow focus results in a considerable gap for multimodal misinformation detectors in the real-world  where evidence retrieved from the web are typically unstructured, noisy and polluted. </li>  
@@ -52,88 +59,90 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 </ul>
 </p>
 
+## Evidence Pollution with GenAI
+<div class="img-div-any-width" markdown="0">
+  <image src="/images/pollution/Fig-2-pipeline.png" width="500" height="570"/>
+</div>
 
-## Framework
+### Example
+<div class="img-div-any-width" markdown="0">
+  <image src="/images/pollution/Fig-3-generation_example_two_col.png" width="500" height="570"/>
+</div>
+
+## Proposed Strategies
 
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/framework.jpeg" width="500" height="570"/>
+  <image src="/images/pollution/strategies.png" width="500" height="570"/>
 </div>
 
 <p align="justify">
 
-The proposed DART framework consists of four key modules: 
-
-<ul>
-<li> <b>Sentence Encoding Block</b> transforms the document into individual sentences and generate representations for sentence-aspect combination.</li>  
-
-<li> <b>Global Context Interaction Block</b> models interactions among sentences and generate context-aware representations that capture aspect-specific information across long-range dependencies.</li>  
-
-<li> <b>Aspect Aggregation Block</b> performs local and global attentive pooling to obtain the document representation.</li>  
-
-<li> <b>Sentiment Classification Block</b> With the document representation obtained, this block leverages a two-layered Multilayer Perceptron (MLP) to predict the sentiment for  the aspect.</li>  
-
-</ul>
+OOC detectors  assess the information authenticity and the consistency between text and associated images.  However, the sophistication of LLMs introduces a new layer of complexity  as it generates convincing polluted evidence that is not easily detected as LLM-generated content. We demonstrate this by evaluating the Vicuna-13B model, an open-source detector, on a dataset comprising of 10,000 pieces of textual evidence, evenly split between human-written and LLM-generated texts. The model  achieves only a 41.3% accuracy in identifying LLM-generated content.
+This motivates us to develop two strategies, cross-modal evidence reranking and cross-modal claim-evidence reasoning, to enhance the robustness of  OOC detectors.
 </p>
 
 
 ## Dataset 
 
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/dataset.jpeg"/>
+  <image src="/images/pollution/table_data.png"/>
 </div>
 
-## Comparative Study
+## Performance Study
 
-### Performance in TripAdvisor and BeerAdvocate
+### Effect of Evidence Pollution on OOC Detectors
 <p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/result-2.png" width="350" height="200"/>
-</div>
-<div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/result-3.png" width="400" height="300"/>
+  <image src="/images/pollution/table_pollution.png" width="350" height="200"/>
 </div>
 </p>
 
+We observe that: 
+1) The combination of polluted text and image  poses a significant threat to
+OOC detectors. 
+Specifically, the accuracy of all 
+detectors drop by more than 9 percentage points, revealing the vulnerabilities of existing OOC detectors against generated multimodal pollution. 
+2) Textual pollution has a greater impact than  visual pollution, indicating that existing OOC detectors are more dependent on textual information.
+This modality bias may stem from the fact that textual evidence often provides more semantics such as relationships between entities compared to images. 
+3) Detection of false claims 
+in the presence of 
+with polluted evidence proves to be more challenging than true claims.
+Specifically, CCN experiences a significant drop of 35.67 points in the F1 score for false claims on 
+the VERITE dataset, highlighting the difficulties in reasoning with contradictory evidence.
 
-### Performance in SocialNews
+
+### Effect of Proposed Strategies
+<p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/result-1.png"/>
+  <image src="/images/pollution/table_strategy.png" width="350" height="200"/>
+</div>
+</p>
+
+We see that:
+1) The combination of both strategies yields the best results, increasing the overall accuracy to 88.82% (+12.40) and 75.44% (+11.15) for SNIFFER on the NewsCLIPpings and VERITE dataset respectively.
+This indicates that the two strategies complement each other, enhancing the model's robustness against multimodal pollution. Further, the strategies can  be generalized to the real-world VERITE dataset to mitigate GenAI-based evidence pollution.
+2) Incorporating cross-modal evidence re-ranking significantly boosts performance. The overall accuracy of SNIFFER increases to 87.68%, marking an improvement of 11.26%, on the NewsCLIPpings dataset. This strategy also enhances the detection of true and false claims 
+ to 87.74% (+10.27) and 87.62% (+12.31), respectively. The results suggest that re-ranking evidence and focusing on the top relevant evidence  greatly aids in reconciling discrepancies introduced by multimodal pollution. 
+3) Similar to  cross-modal reranking, cross-modal claim-evidence reasoning module also shows substantial gains, particularly in the detection of true claims. 
+
+
+### Performance comparison of different strategie
+<div class="img-div-any-width" markdown="0">
+  <image src="/images/pollution/table_comparison.png"/>
 </div>
 
-<div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/result.jpeg"/>
-</div>
-
-
-<blockquote class='subtle'>
-  <b>Note</b>
-  <ul>
-    <li>DART surpasses others in overall accuracy and excels in five key aspects, particularly in the digital-online and health aspects.</li>  
-    <li>DART shows superior performance as document length increases.</li>
-  </ul>
-</blockquote>
+The extra detector approach involves adding an auxiliary classifier to filter out the generated evidence, the vigilant prompting approach introduces hints at the presence of false evidence in the prompt, and the reader ensemble approach combines multiple judgments based on different evidence by voting. 
+SNIFFER, equipped with our proposed solution, achieves the highest performance across two datasets, with significant improvements of 12.40% on NewsCLIPpings and 13.41% on VERITE,
+demonstrating its superiority in the presence of polluted evidence.
+Notably, our approaches can be easily integrated into existing OOC detection frameworks, such as CCN and RED-DOT, whereas the prompting-based and voting-based approaches are restricted to LLM-based detectors.
 
 
 
-## Application to Trust and Polarity Prediction
+
+## Case Study
 
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/result-5.png" width="500" height="550"/>
-</div>
-
-<blockquote class='subtle'>
-  <b>Note</b>
-  <ul>
-    <li>DART gives the best performance in three key aspects and is competitive with GPT4-zeroshot for the Dependability aspect, due to the fewer number of documents with this aspect.</li>  
-  </ul>
-</blockquote>
-
-
-
-## Ablation
-
-<div class="img-div-any-width" markdown="0">
-  <image src="/images/dart/result-4.png" width="500" height="200"/>
+  <image src="/images/pollution/case.png" width="500" height="200"/>
 </div>
 
 
