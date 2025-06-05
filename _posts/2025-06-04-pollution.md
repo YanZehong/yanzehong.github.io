@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mitigating GenAI-powered Evidence Pollution for Out-of-Context Multimodal Misinformation Detection"
-published: true
+published: false
 ---
 
 <p align="center">
