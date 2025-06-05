@@ -78,7 +78,7 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 ## Proposed Strategies
 <p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/strategies.png" width="500" height="600"/>
+  <image src="/images/pollution/strategies.png" width="400" height="600"/>
 </div>
 </p>
 
