@@ -64,7 +64,7 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 </p>
 
 ## Evidence Pollution with GenAI
-
+<p align="center">
 <div class="img-div-any-width" markdown="0">
   <image src="/images/pollution/Fig-2-pipeline.png"/>
 </div>
@@ -78,7 +78,7 @@ We investigate how  polluted evidence affects the performance of existing OOC de
 ## Proposed Strategies
 <p align="center">
 <div class="img-div-any-width" markdown="0">
-  <image src="/images/pollution/strategies.png"/>
+  <image src="/images/pollution/strategies.png" width="500" height="400"/>
 </div>
 </p>
 
