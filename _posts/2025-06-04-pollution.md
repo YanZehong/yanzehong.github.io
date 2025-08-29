@@ -169,8 +169,9 @@ If you found this work helpful for your research, please cite it as following:
 ```
 
 
+
 <footer class="footer">
   <p>
-    This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a hred="https://pengqi.site/Sniffer/">Sniffer</a>. Thanks for the great work.
+    This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Thanks for the great work.
   </p>
 </footer>
