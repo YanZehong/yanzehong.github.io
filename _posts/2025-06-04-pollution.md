@@ -5,9 +5,9 @@ published: true
 ---
 
 <p align="center">
-  <strong>Zehong Yan<sup style="font-size: 70%;vertical-align: super;">1</sup>, Peng Qi<sup style="font-size: 70%;vertical-align: super;">1</sup>, Wynne Hsu<sup style="font-size: 70%;vertical-align: super;">1</sup>, Mong Li Lee<sup style="font-size: 70%;vertical-align: super;">1</sup></strong>
+  <strong>Zehong Yan, Peng Qi, Wynne Hsu, Mong Li Lee</strong>
   <br>
-  <sup style="font-size: 70%;vertical-align: super;">1</sup>NUS Centre for Trusted Internet & Community, National University of Singapore
+  NUS Centre for Trusted Internet & Community, National University of Singapore
 </p>
 
 <p align="center">
