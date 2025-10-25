@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-I'm currently a Ph.D. student in the School of Computing at the National University of Singapore, under the supervision of [Prof. Mong Li Lee](https://www.comp.nus.edu.sg/~leeml/) and [Prof. Wynne Hsu](https://www.comp.nus.edu.sg/~whsu/).
+# Bio
+
+I'm currently a Ph.D. student in the School of Computing at the National University of Singapore, under the supervision of [Prof. Mong Li Lee](https://www.comp.nus.edu.sg/~leeml/) and [Prof. Wynne Hsu](https://www.comp.nus.edu.sg/~whsu/). 
+
+My primary areas of interest in research are combating misinformation, multimedia content analysis (sentiment, trust), and multimodal reasoning. Recently, I focus more on advancing large vision-language foundation models for misinformation detection, location, and explanation generation.
 
 # Education
 
@@ -28,6 +32,8 @@ I'm currently a Ph.D. student in the School of Computing at the National Univers
 #### 07/2017 – 08/2017, University of California San Diego, U.S.  
 \- Summer Exchange Student  
 
+# Professional Service
+Conference Reviewer: KDD 2024, CVPR 2026, EACL WASSA 2026
 
 # Awards
 - **Outstanding Graduate**, Harbin Institute of Technology, 2020  
