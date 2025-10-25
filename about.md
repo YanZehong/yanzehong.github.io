@@ -8,7 +8,7 @@ permalink: /about/
 
 I'm currently a Ph.D. student in the School of Computing at the National University of Singapore, under the supervision of [Prof. Mong Li Lee](https://www.comp.nus.edu.sg/~leeml/) and [Prof. Wynne Hsu](https://www.comp.nus.edu.sg/~whsu/). 
 
-My primary areas of interest in research are combating misinformation, multimedia content analysis (sentiment, trust), and multimodal reasoning. Recently, I focus more on advancing large vision-language foundation models for misinformation detection, location, and explanation generation.
+My primary areas of interest in research are combating misinformation, multimedia content analysis (including sentiment and trust), and multimodal reasoning. Recently, I focus more on advancing large vision language foundation models for misinformation detection, location, and explanation generation.
 
 # Education
 
