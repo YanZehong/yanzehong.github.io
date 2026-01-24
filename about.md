@@ -33,7 +33,7 @@ My primary areas of interest in research are combating misinformation, multimedi
 \- Summer Exchange Student  
 
 # Professional Service
-Conference Reviewer: KDD 2024, CVPR 2026, EACL WASSA 2026
+Conference Reviewer: KDD 2024, CVPR 2026, EACL WASSA 2026, ECCV 2026
 
 # Awards
 - **Outstanding Graduate**, Harbin Institute of Technology, 2020  
