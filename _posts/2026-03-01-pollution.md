@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Mitigating GenAI-powered Evidence Pollution for Out-of-Context Multimodal Misinformation Detection"
+title: "Mitigating GenAI-powered Evidence Pollution for Out-of-Context Misinformation Detection"
 published: true
 ---
 
 <p align="center">
   <strong>Zehong Yan, Peng Qi, Wynne Hsu, Mong Li Lee</strong>
   <br>
-  NUS Centre for Trusted Internet & Community, National University of Singapore
+  National University of Singapore
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ published: true
 
 
 <blockquote class='subtle'>
-  arXiv, 2025 / <a href="https://arxiv.org/pdf/2501.14728">PDF</a> / <a href="https://yanzehong.github.io/pollutino/">Project Page</a> / <a href="https://github.com/YanZehong/GenAI-Evidence-Pollution">Code</a> / <a href="https://github.com/YanZehong/GenAI-Evidence-Pollution/tree/main/data">Data</a>
+  ICDE, 2026 / <a href="https://arxiv.org/pdf/2501.14728">PDF</a> / <a href="https://yanzehong.github.io/pollution">Project Page</a> / <a href="https://github.com/YanZehong/GenAI-Evidence-Pollution">Code</a> / <a href="https://github.com/YanZehong/GenAI-Evidence-Pollution/tree/main/data">Data</a>
 </blockquote>
 
 
